@@ -1,0 +1,278 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #fff;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+// input::-webkit-input-placeholder {
+//     color:#fff !important;
+//     opacity: .8;
+// } 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;    
+    
+    .head-top {
+        display: flex; 
+        div {
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -55/75rem -34/75rem;
+                } 
+            } 
+        }
+        .title {
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #000;
+            text-align: center;
+            
+            h3 {
+                font-weight: 500;
+            }
+        }
+    
+        .register {
+            font-size: 28/75rem;
+            text-align: center;
+            a {                
+            color: #1448ae;
+            }
+        }
+    }
+
+}
+
+// 中间的滚动容器
+#wrapper {
+    left:0;
+    right: 0;
+    z-index:1;
+    width: 10rem;
+    top:88/75rem; 
+    overflow:auto;
+    bottom:98/75rem; 
+    position:absolute;
+    margin: 0 auto; 
+    
+    #scroller {
+        z-index:1;
+        padding:0;
+        position:absolute; 
+    }
+    //表单
+    .login-bar {
+      width: 10rem;
+      margin: 0 auto;
+      padding: 75/75rem 48/75rem 0 ;
+      .sizing;
+
+      li {
+        width: 100%;
+        height: 80/75rem;
+        line-height: 80/75rem;
+        border-bottom: 1px solid #ccc;
+
+        i {
+          float: left;
+          width: 130/75rem;
+          font-size: 28/75rem;
+          color: #666;
+        }
+
+        input {
+          float: left;
+          width: 400/75rem; 
+          height: 80/75rem;
+          font-size: 28/75rem;
+          border: none;
+          background: none;
+          color: #000;
+        }
+
+        a {
+          float: right;
+          width: 55/75rem;
+          margin: 0 auto;
+          text-align: center;
+          display: none;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            width: 22/75rem;
+            height: 22/75rem;
+            .sprite;
+            background-position: -230/75rem -39/75rem;
+
+          }
+        }
+
+        .change {
+           float: right;
+          &:before {
+            width: 31/75rem;
+            height: 17/75rem;
+            background-position: -282/75rem -42/75rem;
+
+          }
+        }
+      }
+      .pw {
+          .clear {
+              float: left;
+          }
+      }
+
+      .login-btn {
+      padding-top: 60/75rem;
+
+      .submit {
+        width: 100%;
+        height: 80/75rem;
+        line-height: 80/75rem;
+        text-align: center;
+        color: #fff;
+        font-size: 32/75rem;
+        border-radius: 10/75rem;
+        background-color: #f7c612;
+      }
+    }
+
+    .login-qes {
+      width: 100%;
+      padding-top: 35/75rem;
+
+      a {
+        font-size: 24/75rem;
+        color: #999;
+        float: left;
+
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+
+    }
+
+   //合作开始 
+   
+  .cooperate {
+    margin: 400/75rem 0 0 75/75rem;
+
+    li {
+      float: left;
+      width: 70/75rem;
+      height: 70/75rem;
+      line-height: 70/75rem;
+      background-color: #5bbe61;
+      border-radius: 100%;
+      margin-right: 60/75rem;
+      text-align: center;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 46/75rem;
+            height: 38/75rem;
+            .sprite;
+            background-position: -347/75rem -31/75rem;
+            margin-top: 12/75rem;
+
+          }
+
+      &:nth-child(2) {
+          background-color: #56b1e8;
+
+          &:before {
+            width: 34/75rem;
+            height: 37/75rem;
+            background-position: -425/75rem -32/75rem;
+
+          }
+
+      }
+
+      &:nth-child(3) {
+          background-color: #666;
+
+          &:before {
+            width: 41/75rem;
+            height: 33/75rem;
+            background-position: -494/75rem -34/75rem;
+
+          }
+
+      }
+
+      &:nth-child(4) {
+          background-color: #dd6e67;
+
+          &:before {
+            width: 41/75rem;
+            height: 33/75rem;
+            background-position: -566/75rem -34/75rem;
+
+          }
+
+      }
+      &:nth-child(5) {
+          margin-right: 0;
+          background-color: #5f76d4;
+
+          &:before {
+            width: 34/75rem;
+            height: 38/75rem;
+            background-position: -642/75rem -31/75rem;
+
+          }
+
+      }
+    }
+  }
+}
+

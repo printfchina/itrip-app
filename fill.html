@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>i旅行-订单填写</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fill.css">
+
+	</head>
+
+	<body>
+		<!--头部搜索开始-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="travel.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h3>订单填写</h3>
+				</div>
+				<div></div>
+			</header>
+		</div>
+
+		<!--内容区域开始-->
+		<div id="wrapper">
+			<div id="scroller">
+				<div class="fill-box">
+					<!-- 预定限制 -->
+					<div class="fill-restrict">
+						<h3>三亚5日4晚半自助游套餐</h3>
+						<p>出发日期：<span>2017-9-10</span></p>
+						<p>出行人数：<span>3 成人</span>
+							<a href="#">预定限制></a>
+						</p>
+					</div>
+					<!-- 选择出行人 -->
+					<div class="fill-select clearfix">
+						<div class="fill-photo"></div>
+						<div class="fill-txt">
+							<div class="tit">
+								<h2>去选择出行人</h2><span>></span></div>
+							<p>为了您顺利出行</p>
+							<p>请务必保证填写项与出游所持证件一致!</p>
+						</div>
+					</div>
+					<!-- 更换出行人员 -->
+					<div class="fill-select fill-change">
+						<div class="fill-old">
+							<b>成</b>
+							<h2>苏打苏塔</h2>
+							<span>></span>
+						</div>
+						<div class="fill-old fill-child">
+							<b>童</b>
+							<h2>苏大大</h2>
+							<span>></span>
+						</div>
+						<div>
+							<p>为了您顺利出行 <br> 请务必保证填写项与出游所持证件一致!
+							</p>
+							<p>
+								<a href="#">更换出行人员></a>
+							</p>
+						</div>
+					</div>
+					<!-- 联系人信息 -->
+
+					<div class="fill-select fill-message">
+						<div class="fill-photo"></div>
+						<div class="fill-txt">
+							<span class="fill-book"></span>
+							<div class="tit">
+								<p>联系人信息</p>
+							</div>
+							<p>请填写联系人姓名</p>
+							<p class="tit-bottom">请填写手机号码<span>134****3456</span></p>
+						</div>
+					</div>
+					<!-- 优惠券 -->
+					<div class="fill-discount">
+						<p>1张券可用<span>></span></p>
+					</div>
+					<!-- 发票 -->
+					<div class="fill-select fill-message fill-debit">
+						<div class="fill-bill">
+							<div class="bill-photo"></div>
+							<div class="bill-txt">
+								<p>发票</p>
+								<p>不需要发票</p>
+							</div>
+							<span>></span>
+						</div>
+						<div class="fill-bill fill-ask">
+							<div class="bill-photo"></div>
+							<div class="bill-txt">
+								<p>特殊要求</p>
+								<p>无</p>
+							</div>
+							<span>></span>
+						</div>
+					</div>
+					<!-- 注意事项 -->
+					<div class="fill-notice">
+						<p><b></b>航班价格变动频繁，<br> &nbsp;&nbsp;&nbsp;&nbsp;请在提交订单后25分钟内完成支付。
+						</p>
+						<p><b></b>点击下一步表示已阅读并同意<span>预订须知和重要条款</span>。</p>
+						<p><b></b>为支持绿色环保，默认电子合同，若需要签署纸质合<br>&nbsp;&nbsp;&nbsp;&nbsp;同请致电客服。</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--底部开始-->
+		<div id="footer">
+			<div class="detail-sum">
+				<span><i>¥</i>6512</span>
+				<a href="#">明细></a>
+			</div>
+			<div class="detail-next">
+				<span>去支付</span>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/fill.js"></script>

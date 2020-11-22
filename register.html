@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>i旅行-注册</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/register.css">
+
+	</head>
+
+	<body>
+		<!--头部搜索开始-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="travel.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h3>注册</h3>
+				</div>
+				<div class="logintip">
+					<a href="login.html">登录</a>
+				</div>
+			</header>
+		</div>
+
+		<!--内容区域开始-->
+		<div id="wrapper">
+			<div id="scroller">
+				<!-- 表单 -->
+				<form action="">
+					<div class="register-bar clearfix">
+						<ul>
+							<li>
+								<i class="login-cty">国家/地区</i><span>中国大陆 86</span>
+							</li>
+							<li class="inp">
+								<i class="login-name">登录名</i><input id="username" type="tel" placeholder="常用手机号码">
+								<a href="javascript:" class="clear"></a>
+							</li>
+							<li>
+								<i class="login-id">验证码</i><input type="text" class="text-id" placeholder="短信验证码"><input type="button" class="btn-id" value="获取验证码" />
+							</li>
+							<li class="inp pw">
+								<i class="login-pw">密码</i>
+								<input id="password" type="password" placeholder="登录密码">
+								<a href="javascript:" class="clear"></a>
+								<a href="javascript:" data-show="1" class="change " style="display: block;"></a>
+							</li>
+						</ul>
+
+						<div class="login-btn">
+							<button class="submit" type="submit">注册</button>
+						</div>
+
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/register.js"></script>

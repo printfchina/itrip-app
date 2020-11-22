@@ -1,0 +1,642 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #f4f4f4;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ } 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;
+    background-color:#1448ae;
+    
+    
+    .head-top {
+        display: flex; 
+        div {
+           display: flex; 
+           -webkit-box-flex: 1;
+           -webkit-flex: 1;
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -33/75rem;
+                } 
+            } 
+        }
+        .title {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+        }
+        
+    
+    }    
+  
+}
+
+// 中间的滚动容器
+#wrapper {
+   left:0;
+   right: 0;
+   z-index:1;
+   width: 10rem;
+   top:88/75rem; 
+   overflow:auto;
+   bottom:98/75rem; 
+   position:absolute;
+   margin: 0 auto; 
+      
+   #scroller {
+       z-index:1;
+       padding:0;
+       position:absolute; 
+   }
+   
+    .resource-box {
+      width:10rem;
+      padding:58/75rem 24/75rem 32/75rem;
+      .sizing;
+    }
+
+    /* 总额明细 */
+  .resource-detail {
+    color:#888d94;
+    margin-bottom:50/75rem;
+    padding:0 10/75rem;
+    .sizing;
+
+    .detail-l{
+      float:left;
+
+      h2{
+        font-size:38/75rem;
+        margin-bottom:20/75rem;
+      }
+
+      p{
+        font-size:28/75rem;
+        color:#a9aaad;
+        line-height:40/75rem;
+
+        span{
+          color:#888d94;
+        }
+
+      }
+    }
+
+    .detail-r{
+      float:right;
+
+      .detail-r-num{
+        color:#f88412;
+        position:relative;
+        margin-bottom:20/75rem;
+
+          b{
+            font-size:36/75rem;
+            font-weight:normal;
+            position: absolute;
+            top:8/75rem;
+            left:-15/75rem;
+          }
+
+          strong{
+            font-size:62/75rem;
+          }
+
+        }
+      .detail-all{
+        font-size:28/75rem;
+        text-align:right;
+      }
+      
+    }
+  }
+
+  /* 三亚-北京 */
+.resource-hangban{
+  margin-bottom:25/75rem;
+}
+.resource-reelect {
+  border-left: 1/75rem dashed #c0c0c0;
+  height: 208/75rem;
+  padding: 45/75rem 0 0;
+  position: relative;
+  text-align: center;
+  width: 690/75rem;
+  background-color: #fff;
+  margin:0 auto;
+  border-radius: 23/75rem;
+  border:2/75rem solid #cad7da ;
+  border-bottom: 2/75rem dashed #cad7da;
+  padding:30/75rem 50/75rem 0;
+  box-sizing: border-box;
+
+    h2{
+      font-size:60/75rem;
+      color:#888d94;
+    }
+
+    p{
+      font-size:28/75rem;
+      color:#a9aaad;
+    }
+}
+
+.resource-content::before, .resource-content::after {
+    background-color: #f0f0f0;
+    border-radius: 16/75rem;
+    content: " ";
+    height: 34/75rem;
+    top: -16/75rem;
+    position: absolute;
+    width: 34/75rem;
+}
+
+.resource-content::before {
+    box-shadow: -2/75rem 0 1/75rem #ccc inset;
+    left: -16/75rem;
+}
+
+.resource-content::after {
+    box-shadow:2/75rem 0 1/75rem #ccc inset;
+    right:-16/75rem;
+    
+}
+.resource-content {
+  background-color:#f9f9f9;
+  height:524/75rem;
+  width:690/75rem;
+  margin:0 auto;
+  position:relative;
+  border-radius: 23/75rem;
+  border:2/75rem solid #cad7da ;
+  border-top:none;
+  padding:53/75rem 0 0 0;
+  box-sizing: border-box;
+
+  li{
+    float:left;
+    width:290/75rem;
+    padding-left:50/75rem;
+    margin-bottom: 40/75rem;
+
+    span{
+      display:block;
+      color:#a9aaad;
+      font-size:28/75rem;
+      height:40/75rem;
+    }
+
+    p{
+      color:#676c73;
+      font-size:32/75rem;
+
+      b{
+        font-weight:normal;
+        font-size: 24/75rem;
+        margin-left:10/75rem;
+      }
+
+      i{
+        font-style: normal;
+        font-size:28/75rem;
+        margin-left:10/75rem;
+      }
+
+    }
+  }
+}
+.begin-place,.ariplane,.end-place {
+  float:left;
+}
+.ariplane{
+  margin:0 80/75rem;
+  width:71/75rem;
+  height:53/75rem;
+  margin-top:26/75rem;
+  .sprite;
+  background-position: -508/75rem -407/75rem;
+}
+.resource-content li:nth-child(5) p,.resource-content li:nth-child(6) p{
+  font-size:28/75rem;
+
+  b{
+    font-size:32/75rem;
+  }
+
+}
+.resource-content li:nth-child(7) a{
+  font-size:28/75rem;
+  color:#676c73;
+  text-decoration: underline;
+}
+.resource-content li:nth-child(8) a{
+  font-size:32/75rem;
+  color:#1aafd9;
+}
+
+/* 套餐券 */
+.quan-01 {
+  width:100%;
+  height:215/75rem;
+  background:url(../images/img/quan_03.png) center no-repeat;
+  background-size:contain;
+  margin-bottom:25/75rem;
+
+  .quan-01-con{
+    width:338/75rem;
+    height:180/75rem;
+    float:right;
+    margin:16/75rem 45/75rem 0 0;
+    padding:20/75rem 0 0 30/75rem;
+    .sizing;
+    color:#fff;
+    font-size:28/75rem;
+
+    .man-box-num{
+      /* width:186/75rem;
+      height:62/75rem; */
+      margin-top:10/75rem;
+      line-height: 62/75rem;
+      color: #999;
+      font-size: 30/75rem;
+
+      .change-box-left{
+          width: 52/75rem;
+          height: 60/75rem;
+          border: 1px solid #ccc;
+          border-top-left-radius: 5/75rem;
+          border-bottom-left-radius: 5/75rem;
+          display: block;
+          float: left;
+          text-align: center;
+          font-size: 30/75rem;
+          background-color: #fff;
+      }
+
+      input{
+          width: 80/75rem;
+          height: 60/75rem;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          float: left;
+          text-align: center;
+          background: #f9da9f;
+          font-size: 30/75rem;
+          color: #666;
+      }
+
+      .change-box-right{
+          width: 52/75rem;
+          height: 60/75rem;
+          border: 1px solid #ccc;
+          border-top-right-radius: 5/75rem;
+          border-bottom-right-radius: 5/75rem;
+          display: block;
+          float: left;
+          text-align: center;
+          margin-left: 0;
+          font-size: 30/75rem;
+          background-color: #fff;
+
+      }
+
+    }
+  
+  }
+}
+.quan-02 {
+  background-image: url(../images/img/quan_06.png);
+
+  input {
+    background-color: #f2b5d8!important;
+  }
+}
+
+/* 额外费用账单 */
+.resource-bill {
+  width:100%;
+  border:2px solid #cad7da;
+  border-radius: 20/75rem;
+  padding-bottom:70/75rem;
+  background-color: #fff;
+  .sizing;
+
+  .bill-top{
+    width:100%;
+    height:94/75rem;
+    background: url(../images/img/bj_03.png) top center no-repeat;
+    background-size: contain;
+    font-size:28/75rem;
+    color:#fff;
+    line-height:92/75rem;
+    text-indent:30/75rem;
+  }
+/* 单房差 */
+.bill-danfangcha {
+  height:192/75rem;
+  border-bottom: 2/75rem dashed #cad7da;
+  padding:36/75rem 38/75rem 0 29/75rem;
+  .sizing;
+
+  .danfangcha-l {
+    float:left;
+
+    h3 {
+      font-size:32/75rem;
+      color:#676c73;
+      margin-bottom: 15/75rem;
+    }
+
+    .man-box-num {
+      line-height: 62/75rem;
+      color: #999;
+      font-size: 30/75rem;
+
+      .change-box-left{
+          width: 52/75rem;
+          height: 60/75rem;
+          border: 1px solid #ccc;
+          border-top-left-radius: 5/75rem;
+          border-bottom-left-radius: 5/75rem;
+          display: block;
+          float: left;
+          text-align: center;
+          font-size: 30/75rem;
+      }
+
+      input{
+          width: 80/75rem;
+          height: 60/75rem;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          float: left;
+          text-align: center;
+          background: #e5e5e5;
+          color: #666;
+          font-size: 30/75rem;
+      }
+
+      .change-box-right{
+          width: 52/75rem;
+          height: 60/75rem;
+          border: 1px solid #ccc;
+          border-top-right-radius: 5/75rem;
+          border-bottom-right-radius: 5/75rem;
+          display: block;
+          float: left;
+          text-align: center;
+          margin-left: 0;
+          font-size: 30/75rem;
+
+      }
+
+
+  }
+
+  }
+  .danfangcha-r {
+    float:right;
+    margin-top:20/75rem;
+
+    .bill-price {
+      color:#888d94;
+      font-size: 32/75rem;
+      position: relative;
+
+      b{
+        font-size:28/75rem;
+        color:#f88412;
+        font-weight:normal;
+        position: absolute;
+        top:2/75rem;
+        left:-14/75rem;
+      }
+
+      strong {
+        color:#f88412;
+        font-weight:normal;
+        font-size:48/75rem;
+      }
+    }
+  }
+}
+
+/* 门票 */
+.bill-ticket {
+  height:342/75rem;
+
+  .bill-ticket-t{
+    width:100%;
+    height:144/75rem;
+  }
+
+  .bill-ticket-b {
+    width:100%;
+    height:144/75rem;
+  }
+}
+
+/* 意外保险 */
+.bill-insurance{
+  padding: 43/75rem 38/75rem 0 30/75rem;
+  .sizing;
+
+  .bill-one{
+
+    h3{
+      font-size: 32/75rem;
+      color:#676c73;
+      margin-bottom:10/75rem;
+    }
+
+    p{
+      font-size:28/75rem;
+      color:#a9aaad;
+
+        span{
+        width:25/75rem;
+        height:25/75rem;
+        display:inline-block;
+        .sizing;
+        .sprite;
+        background-position: -438/75rem -420/75rem;
+        margin-right: 9/75rem;
+
+      }
+     }
+  }
+
+  .bill-two {
+    margin-top:40/75rem;
+    position: relative;
+
+    .cur {
+         // border-color: #1ab2db;
+          // background: #1ab2db;
+
+          &:after {
+              content: "";
+              width: 12/75rem;
+              height: 28/75rem;
+              position: absolute;
+              left: 8/75rem;
+              top: -2/75rem;
+              border-top: 6/75rem solid #1ab2db;
+              border-left: 6/75rem solid #1ab2db;
+              z-index: 3;
+              -webkit-transform: rotate(225deg);
+              transform: rotate(225deg);
+          }
+      }
+
+      i {
+          float: left;
+          width: 34/75rem;
+          height: 34/75rem;
+          border: 1px solid #cad7da;
+          border-radius: 4/75rem;
+          /* position: absolute;
+          left: 45/75rem;
+          top: 35/75rem; */
+      }
+
+
+    p{
+      padding-left:20/75rem;
+      font-size:32/75rem;
+      float:left;
+    }
+
+    p:nth-child(1){
+      position:relative;
+    }
+
+    p:nth-child(2){
+      color:#a9aaad;
+      font-size:28/75rem;
+    }
+
+    span{
+      position:relative;
+      float:right;
+      color:#888d94;
+      font-size:32/75rem;
+      top:-40/75rem;
+      right:-90/75rem;
+
+      b{
+        font-weight:normal;
+        font-size:28/75rem;
+        color:#f88412;
+        position:absolute;
+        top:5/75rem;
+        left:-12/75rem;
+      }
+
+      strong{
+        font-size:48/75rem;
+        color:#f88412;
+      }
+    }
+  }
+
+  a{
+    color:#37b4db;
+    font-size:32/75rem;
+    float: right;
+  }
+
+  .bill-three {
+
+    span{
+      right:-100/75rem;
+    }
+}
+  
+}
+
+}
+
+
+}
+
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    line-height: 98/75rem;
+    background-color: #fff;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    div {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+    }
+
+    .detail-next {
+        background-color: #f1a30f;
+        color: #fff;
+        font-size: 30/75rem;
+
+        span {
+        font-size: 38/75rem;
+        }
+    }
+}

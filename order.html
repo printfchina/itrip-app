@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>i旅行-订单</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/order.css">
+
+	</head>
+
+	<body>
+		<!--头部搜索开始-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="myinfo.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h3>全部订单</h3>
+				</div>
+				<div class="register">
+					<a href="#">手机查单</a>
+				</div>
+			</header>
+		</div>
+
+		<!--内容区域开始-->
+		<div id="wrapper">
+			<div id="scroller">
+				<!-- 订单开始 -->
+				<section class="order">
+					<ul class="order-list">
+						<li class="order-item clearfix">
+							<div class="order-des">
+								<i class="order-icon"></i>
+								<div class="order-tit">
+									<h3>三亚5日4晚半自助游</h3>
+									<span>12-23至12-27</span>
+								</div>
+								<div class="order-key">
+									<span class="order-price">
+							¥6512
+							</span>
+									<em class="order-status">
+								未提交
+							</em>
+								</div>
+							</div>
+							<div class="order-btn">
+								<a href="#">取消</a>
+								<a href="#">查看行程</a>
+								<a href="#">继续预订</a>
+							</div>
+						</li>
+					</ul>
+
+					<!-- 提示信息 -->
+					<section class="order-tip">
+						<span>
+					已显示全部订单
+				</span>
+						<a href="#" class="order-look">查看一年前订单 > </a>
+					</section>
+
+				</section>
+
+			</div>
+		</div>
+		<!--底部开始-->
+		<div id="footer">
+			<a href="#" class="ord-sel active ">
+				<i class="active2"></i> 筛选
+			</a>
+			<a href="#" class="ord-pre">
+				<i></i> 预定时间
+			</a>
+			<a href="#" class="ord-eff">
+				有效订单
+				<i></i>
+			</a>
+		</div>
+
+	</body>
+
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/order.js"></script>

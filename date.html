@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>i旅行-时间日期选择</title>
+
+		<!-- Bootstrap Include -->
+		<link href="lib/mobiscroll/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" href="lib/mobiscroll/css/mobiscroll.custom-2.17.1.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/date.css">
+
+	</head>
+
+	<body>
+		<!--头部搜索开始-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="travelDetail.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h3>选择日期和人数</h3>
+				</div>
+				<div class="register">
+					<a href="#">起价说明</a>
+				</div>
+			</header>
+		</div>
+
+		<!--内容区域开始-->
+		<div id="wrapper">
+			<div id="scroller">
+				<div id="demo" placeholder="Please Select..."></div>
+
+				<section class="set-time clearfix">
+					<div class="select-num">
+						<div class="man-box clearfix">
+							<span>成人</span>
+							<div class="man-box-price">¥<strong>3159</strong>/人</div>
+							<div class="man-box-num">
+								<span class="change-box-left jian">-</span>
+								<input class="shu" type="tel" name="" id="" value="0">
+								<span class="change-box-right jia">+</span>
+							</div>
+						</div>
+
+						<div class="man-box clearfix">
+							<span>儿童</span>
+							<div class="man-box-num">
+								<span class="change-box-left jian">-</span>
+								<input class="shu" type="tel" name="" id="" value="0">
+								<span class="change-box-right jia">+</span>
+							</div>
+						</div>
+
+						<div class="man-box infant-box clearfix">
+							<i></i>
+							<span>携带幼儿</span>
+							<em>0~2岁</em>
+						</div>
+
+						<div class="man-box set-tip clearfix">
+							<em>&nbsp;最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人，</em>
+							<i>&nbsp;*以上价格均为起价</i>
+						</div>
+
+					</div>
+				</section>
+
+			</div>
+		</div>
+		<!--底部开始-->
+		<div id="footer">
+			<div class="detail-sum">
+				<span>总额：¥6318</span>
+				<a href="#">明细></a>
+			</div>
+			<div class="detail-next" id="select">
+				<a href="resource.html">
+					<span>下一步</span>
+					<s>选择资源</s>
+
+				</a>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<!-- jQuery Include -->
+<script src="lib/mobiscroll/js/jquery-1.11.1.min.js"></script>
+
+<script src="lib/mobiscroll/js/mobiscroll.custom-2.17.1.min.js"></script>
+<script src="js/date.js"></script>

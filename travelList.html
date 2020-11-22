@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+	<title>i旅行-旅游列表页</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/travelList.css">
+	
+</head>
+<body>
+	<!--头部搜索开始-->
+	<div id="header">
+		<span class="go-back">
+			<a href="index.html">
+				<i class="goback-icon"></i>
+			</a>
+		</span>
+		
+		<div class="search-main">
+			<div class="search-wrapper">
+				<div class="start">
+					<span>北京</span>
+				</div>
+				<div class="search-box">
+					目的地/关键字
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--内容区域开始-->
+	<div id="wrapper">
+		<div id="scroller">
+			<!--Tab头部-->
+			<nav class="nav-tab">
+				<ul>
+					<li class="nav-active">全部</li>
+					<li>出发地参团</li>
+					<li>目的地参团</li>
+					<li>自由行</li>
+					<li>游轮</li>
+				</ul>
+			</nav>
+			<!--Tab 面板-->
+			<section class="tab-panel" onclick="window.open('travelDetail.html','_self')">
+				<div class="panel-item" style="display: block;">
+					<ul class="tour-list">
+						<a href="#">
+							<li class="item-container">
+								<div class="tour-img">
+									<img src="images/img/list_0411_03.jpg" alt="" />
+									<i></i>
+								</div>
+								<div class="tour-content">
+									<h3>【宿古北之光】古北水镇2日1晚跟团购价格</h3>
+									<div class="tour-icon">
+										<span>无购物</span>
+										<span>无自费 </span>
+										<span class="icon-com">爸妈放心游</span>
+									</div>
+									<div class="tour-info clearfix">
+										<dl>
+											<dt>北京出发</dt>
+											<dd>5星古北之光温泉酒店住宿</dd>
+										</dl>
+									</div>
+									<span class="tour-schedule">
+										班期： 每周四、五、六、日
+									</span>
+									<div class="tour-des">
+										<span class="price">
+											<em>￥</em>
+											<strong>2588</strong>
+											起
+										</span>
+										<span class="tral">
+											<i>256</i>
+											人出游
+										</span>
+										<span class="comment">
+											<i>69</i>
+											条评论
+										</span>
+										<span class="grade">
+											<strong>5</strong>
+											分
+										</span>
+									</div>
+									
+								</div>
+							</li>
+						</a>
+						<a href="#">
+							<li class="item-container">
+								<div class="tour-img">
+									<img src="images/img/list_0411_06.jpg" alt="" />
+									<i></i>
+								</div>
+								<div class="tour-content">
+									<h3>【游圣诞小镇】密云1日自由行·南山格</h3>
+									<div class="tour-icon">
+										<span>无购物</span>
+										<span>无自费 </span>
+										<span class="icon-com">爸妈放心游</span>
+									</div>
+									<div class="tour-info clearfix">
+										<dl>
+											<dt>北京出发</dt>
+											<dd>5星古北之光温泉酒店住宿</dd>
+										</dl>
+									</div>
+									<span class="tour-schedule">
+										班期： 每周四、五、六、日
+									</span>
+									<div class="tour-des">
+										<span class="price">
+											<em>￥</em>
+											<strong>1099</strong>
+											起
+										</span>
+										<span class="tral">
+											<i>203</i>
+											人出游
+										</span>
+										<span class="comment">
+											<i>38</i>
+											条评论
+										</span>
+										<span class="grade">
+											<strong>5</strong>
+											分
+										</span>
+									</div>
+									
+								</div>
+							</li>
+						</a>
+						<a href="#">
+							<li class="item-container">
+								<div class="tour-img">
+									<img src="images/img/list_0411_08.jpg" alt="" />
+										
+								</div>
+								<div class="tour-content">
+									<h3>北京1日自由行·八达岭长城+十三陵定格</h3>
+									<div class="tour-icon">
+										<span>无购物</span>
+										<span>无自费 </span>
+										<span class="icon-com">爸妈放心游</span>
+									</div>
+									<div class="tour-info clearfix">
+										<dl>
+											<dt>北京出发</dt>
+											<dd>5星古北之光温泉酒店住宿</dd>
+										</dl>
+									</div>
+									<span class="tour-schedule">
+										班期： 每周四、五、六、日
+									</span>
+									<div class="tour-des">
+										<span class="price">
+											<em>￥</em>
+											<strong>159</strong>
+											起
+										</span>
+										<span class="tral">
+											<i>390</i>
+											人出游
+										</span>
+										<span class="comment">
+											<i>90</i>
+											条评论
+										</span>
+										<span class="grade">
+											<strong>5</strong>
+											分
+										</span>
+									</div>
+									
+								</div>
+							</li>
+						</a> 
+						<a href="#">
+							<li class="item-container">
+								<div class="tour-img">
+									<img src="images/img/list_0411_10.jpg" alt="" />
+									
+								</div>
+								<div class="tour-content">
+									<h3>怀柔2日自由行(4钻)【每人减100元】</h3>
+									<div class="tour-icon">
+										<span>无购物</span>
+										<span>无自费 </span>
+										<span class="icon-com">爸妈放心游</span>
+									</div>
+									<div class="tour-info clearfix">
+										<dl>
+											<dt>北京出发</dt>
+											<dd>5星古北之光温泉酒店住宿</dd>
+										</dl>
+									</div>
+									<span class="tour-schedule">
+										班期： 每周四、五、六、日
+									</span>
+									<div class="tour-des">
+										<span class="price">
+											<em>￥</em>
+											<strong>269</strong>
+											起
+										</span>
+										<span class="tral">
+											<i>220</i>
+											人出游
+										</span>
+										<span class="comment">
+											<i>65</i>
+											条评论
+										</span>
+										<span class="grade">
+											<strong>5</strong>
+											分
+										</span>
+									</div>
+									
+								</div>
+							</li>
+						</a> 
+						<a href="#">
+							<li class="item-container">
+								<div class="tour-img">
+									<img src="images/img/list_0411_12.jpg" alt="" />
+									
+								</div>
+								<div class="tour-content">
+									<h3>北京5日4晚跟团游·一价全含·无自费</h3>
+									<div class="tour-icon">
+										<span>无购物</span>
+										<span>无自费 </span>
+										<span class="icon-com">爸妈放心游</span>
+									</div>
+									<div class="tour-info clearfix">
+										<dl>
+											<dt>北京出发</dt>
+											<dd>5星古北之光温泉酒店住宿</dd>
+										</dl>
+									</div>
+									<span class="tour-schedule">
+										班期： 每周四、五、六、日
+									</span>
+									<div class="tour-des">
+										<span class="price">
+											<em>￥</em>
+											<strong>2099</strong>
+											起
+										</span>
+										<span class="tral">
+											<i>189</i>
+											人出游
+										</span>
+										<span class="comment">
+											<i>56</i>
+											条评论
+										</span>
+										<span class="grade">
+											<strong>5</strong>
+											分
+										</span>
+									</div>
+									
+								</div>
+							</li>
+						</a> 
+					</ul>
+				</div>
+				<div class="panel-item">
+					<ul>
+						<a href="#">
+						<li class="item-container">
+							<div class="tour-img">
+								<img src="images/img/list_0411_03.jpg" alt="" />
+								<i></i>
+							</div>
+							<div class="tour-content">
+								<h3>【宿古北之光】古北水镇2日1晚跟团购价格</h3>
+								<div class="tour-icon">
+									<span>无购物</span>
+									<span>无自费 </span>
+									<span class="icon-com">爸妈放心游</span>
+								</div>
+								<div class="tour-info clearfix">
+									<dl>
+										<dt>北京出发</dt>
+										<dd>5星古北之光温泉酒店住宿</dd>
+									</dl>
+								</div>
+								<span class="tour-schedule">
+									班期： 每周四、五、六、日
+								</span>
+								<div class="tour-des">
+									<span class="price">
+										<em>￥</em>
+										<strong>2588</strong>
+										起
+									</span>
+									<span class="tral">
+										<i>256</i>
+										人出游
+									</span>
+									<span class="comment">
+										<i>69</i>
+										条评论
+									</span>
+									<span class="grade">
+										<strong>5</strong>
+										分
+									</span>
+								</div>
+								
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li class="item-container">
+							<div class="tour-img">
+								<img src="images/img/list_0411_06.jpg" alt="" />
+								<i></i>
+							</div>
+							<div class="tour-content">
+								<h3>【游圣诞小镇】密云1日自由行·南山格</h3>
+								<div class="tour-icon">
+									<span>无购物</span>
+									<span>无自费 </span>
+									<span class="icon-com">爸妈放心游</span>
+								</div>
+								<div class="tour-info clearfix">
+									<dl>
+										<dt>北京出发</dt>
+										<dd>5星古北之光温泉酒店住宿</dd>
+									</dl>
+								</div>
+								<span class="tour-schedule">
+									班期： 每周四、五、六、日
+								</span>
+								<div class="tour-des">
+									<span class="price">
+										<em>￥</em>
+										<strong>1099</strong>
+										起
+									</span>
+									<span class="tral">
+										<i>203</i>
+										人出游
+									</span>
+									<span class="comment">
+										<i>38</i>
+										条评论
+									</span>
+									<span class="grade">
+										<strong>5</strong>
+										分
+									</span>
+								</div>
+								
+							</div>
+						</li>
+					</a>
+					</ul>	
+				</div>
+				<div class="panel-item">
+					<ul>
+						<a href="#">
+							<li class="item-container">
+						<div class="tour-img">
+							<img src="images/img/list_0411_08.jpg" alt="" />
+								
+						</div>
+						<div class="tour-content">
+							<h3>北京1日自由行·八达岭长城+十三陵定格</h3>
+							<div class="tour-icon">
+								<span>无购物</span>
+								<span>无自费 </span>
+								<span class="icon-com">爸妈放心游</span>
+							</div>
+							<div class="tour-info clearfix">
+								<dl>
+									<dt>北京出发</dt>
+									<dd>5星古北之光温泉酒店住宿</dd>
+								</dl>
+							</div>
+							<span class="tour-schedule">
+								班期： 每周四、五、六、日
+							</span>
+							<div class="tour-des">
+								<span class="price">
+									<em>￥</em>
+									<strong>159</strong>
+									起
+								</span>
+								<span class="tral">
+									<i>390</i>
+									人出游
+								</span>
+								<span class="comment">
+									<i>90</i>
+									条评论
+								</span>
+								<span class="grade">
+									<strong>5</strong>
+									分
+								</span>
+							</div>
+							
+						</div>
+					</li>
+						</a>
+					</ul>
+				</div>
+				<div class="panel-item">
+					<ul>
+						<a href="#">
+							<li class="item-container">
+						<div class="tour-img">
+							<img src="images/img/list_0411_03.jpg" alt="" />
+							<i></i>
+						</div>
+						<div class="tour-content">
+							<h3>【宿古北之光】古北水镇2日1晚跟团购价格</h3>
+							<div class="tour-icon">
+								<span>无购物</span>
+								<span>无自费 </span>
+								<span class="icon-com">爸妈放心游</span>
+							</div>
+							<div class="tour-info clearfix">
+								<dl>
+									<dt>北京出发</dt>
+									<dd>5星古北之光温泉酒店住宿</dd>
+								</dl>
+							</div>
+							<span class="tour-schedule">
+								班期： 每周四、五、六、日
+							</span>
+							<div class="tour-des">
+								<span class="price">
+									<em>￥</em>
+									<strong>2588</strong>
+									起
+								</span>
+								<span class="tral">
+									<i>256</i>
+									人出游
+								</span>
+								<span class="comment">
+									<i>69</i>
+									条评论
+								</span>
+								<span class="grade">
+									<strong>5</strong>
+									分
+								</span>
+							</div>
+							
+						</div>
+					</li>
+						</a>
+						<a href="#">
+							<li class="item-container">
+						<div class="tour-img">
+							<img src="images/img/list_0411_06.jpg" alt="" />
+							<i></i>
+						</div>
+						<div class="tour-content">
+							<h3>【游圣诞小镇】密云1日自由行·南山格</h3>
+							<div class="tour-icon">
+								<span>无购物</span>
+								<span>无自费 </span>
+								<span class="icon-com">爸妈放心游</span>
+							</div>
+							<div class="tour-info clearfix">
+								<dl>
+									<dt>北京出发</dt>
+									<dd>5星古北之光温泉酒店住宿</dd>
+								</dl>
+							</div>
+							<span class="tour-schedule">
+								班期： 每周四、五、六、日
+							</span>
+							<div class="tour-des">
+								<span class="price">
+									<em>￥</em>
+									<strong>1099</strong>
+									起
+								</span>
+								<span class="tral">
+									<i>203</i>
+									人出游
+								</span>
+								<span class="comment">
+									<i>38</i>
+									条评论
+								</span>
+								<span class="grade">
+									<strong>5</strong>
+									分
+								</span>
+							</div>
+							
+						</div>
+					</li>
+						</a>
+					</ul>
+					
+				</div>
+				<div class="panel-item">
+					<ul>
+						<a href="#">
+							<li class="item-container">
+						<div class="tour-img">
+							<img src="images/img/list_0411_08.jpg" alt="" />
+								
+						</div>
+						<div class="tour-content">
+							<h3>北京1日自由行·八达岭长城+十三陵定格</h3>
+							<div class="tour-icon">
+								<span>无购物</span>
+								<span>无自费 </span>
+								<span class="icon-com">爸妈放心游</span>
+							</div>
+							<div class="tour-info clearfix">
+								<dl>
+									<dt>北京出发</dt>
+									<dd>5星古北之光温泉酒店住宿</dd>
+								</dl>
+							</div>
+							<span class="tour-schedule">
+								班期： 每周四、五、六、日
+							</span>
+							<div class="tour-des">
+								<span class="price">
+									<em>￥</em>
+									<strong>159</strong>
+									起
+								</span>
+								<span class="tral">
+									<i>390</i>
+									人出游
+								</span>
+								<span class="comment">
+									<i>90</i>
+									条评论
+								</span>
+								<span class="grade">
+									<strong>5</strong>
+									分
+								</span>
+							</div>
+							
+						</div>
+					</li>	
+						</a>
+					</ul>
+				</div>
+			</section>
+		
+		
+		</div>
+	</div>
+	
+	<!--底部开始-->
+	<div id="footer">
+		<a href="travel.html" class="home active">
+			<span></span>
+			<p>旅游首页</p>
+		</a>
+		<a href="search.html" class="destination">
+			<span></span>
+			<p>目的地</p>
+		</a>
+		<a href="history.html" class="history">
+			<span></span>
+			<p>浏览历史</p>
+		</a>
+		<a href="myinfo.html" class="my">
+			<span></span>
+			<p>个人</p>
+		</a>
+	</div>
+</body>
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/travelList.js"></script>

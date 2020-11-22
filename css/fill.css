@@ -1,0 +1,375 @@
+body {
+  font-size: 12px;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  font-family: helvetica;
+  background: #f4f4f4;
+}
+.sizing {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: .8;
+}
+.sprite {
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+#header {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 1.17333333rem;
+  position: absolute;
+  line-height: 1.17333333rem;
+  background-color: #1448ae;
+}
+#header .head-top {
+  display: flex;
+}
+#header .head-top div {
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+#header .head-top .go-back {
+  display: flex;
+  flex: 1;
+  height: 1.17333333rem;
+  padding-left: 0.50666667rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#header .head-top .go-back .goback-icon {
+  width: 1.09333333rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+}
+#header .head-top .go-back .goback-icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.24rem;
+  height: 0.44rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -1.38666667rem -0.44rem;
+}
+#header .head-top .title {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  font-size: 0.42666667rem;
+  color: #fff;
+  text-align: center;
+}
+#wrapper {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 10rem;
+  top: 1.17333333rem;
+  overflow: auto;
+  bottom: 1.30666667rem;
+  position: absolute;
+  margin: 0 auto;
+  /* 预定限制 */
+  /* 选择出行人 */
+  /* 更换出行人员 */
+  /* 联系人信息 */
+  /* 优惠券 */
+  /* 发票 */
+  /* 注意事项 */
+}
+#wrapper #scroller {
+  z-index: 1;
+  padding: 0;
+  position: absolute;
+}
+#wrapper .fill-box {
+  width: 10rem;
+  box-sizing: border-box;
+  padding: 0.53333333rem 0.4rem 0.53333333rem 0.32rem;
+  color: #888d94;
+  margin: 0 auto;
+}
+#wrapper .fill-restrict {
+  padding: 0 .15rem;
+}
+#wrapper .fill-restrict h3 {
+  font-size: 0.50666667rem;
+  padding: .2rem 0;
+}
+#wrapper .fill-restrict p {
+  color: #a9aaad;
+  font-size: 0.42666667rem;
+  height: .56rem;
+  line-height: .56rem;
+}
+#wrapper .fill-restrict p span {
+  color: #888d94;
+}
+#wrapper .fill-restrict p a {
+  float: right;
+  color: #888d94;
+  font-size: 0.37333333rem;
+}
+#wrapper .fill-select {
+  height: 2.9rem;
+  border: .03rem solid #cad7da;
+  border-radius: .3rem;
+  margin-top: .6rem;
+  background-color: #fff;
+}
+#wrapper .fill-select .fill-photo {
+  float: left;
+  margin: 0.62666667rem 0.26666667rem 0 0.45333333rem;
+  width: 0.92rem;
+  height: 0.92rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -0.45333333rem -6.78666667rem;
+}
+#wrapper .fill-select .fill-txt {
+  float: left;
+  width: 7.26666667rem;
+}
+#wrapper .fill-select .fill-txt .tit {
+  height: 0.57333333rem;
+  margin-top: 0.62666667rem;
+  margin-bottom: 0.13333333rem;
+}
+#wrapper .fill-select .fill-txt span {
+  float: right;
+  font-size: 0.53333333rem;
+  font-weight: 700;
+  color: #ced3db;
+}
+#wrapper .fill-select .fill-txt h2 {
+  float: left;
+  font-size: 0.50666667rem;
+}
+#wrapper .fill-select .fill-txt p {
+  width: 100%;
+  float: left;
+  margin-bottom: 0.06666667rem;
+}
+#wrapper .fill-old {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin-top: 0.64rem;
+  padding-left: 0.62666667rem;
+  padding-right: 0.46666667rem;
+}
+#wrapper .fill-old b {
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 0.32rem;
+  border: 0.04rem solid #cad7da;
+  font-size: 0.34666667rem;
+  float: left;
+  text-align: center;
+  line-height: 0.56rem;
+  color: #cad7da;
+  margin-right: 0.4rem;
+}
+#wrapper .fill-old h2 {
+  float: left;
+  font-size: 0.50666667rem;
+}
+#wrapper .fill-old span {
+  float: right;
+  font-size: 0.53333333rem;
+  font-weight: 700;
+  color: #ced3db;
+}
+#wrapper .fill-change {
+  height: 5.26666667rem;
+  margin-top: 0.34666667rem;
+}
+#wrapper .fill-change div:nth-child(3) {
+  padding-left: 1.66666667rem;
+  margin-top: 0.53333333rem;
+}
+#wrapper .fill-change div:nth-child(3) p {
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+#wrapper .fill-change div:nth-child(3) p:nth-child(2) {
+  font-size: 0.42666667rem;
+  margin-top: 0.2rem;
+}
+#wrapper .fill-change div:nth-child(3) p:nth-child(2) a {
+  color: #1aafd9;
+}
+#wrapper .fill-message {
+  margin-top: 0.34666667rem;
+  height: 3.33333333rem;
+}
+#wrapper .fill-message .fill-txt {
+  position: relative;
+}
+#wrapper .fill-message .fill-txt p span {
+  color: #888d94;
+  margin-left: 0.33333333rem;
+}
+#wrapper .fill-message .fill-photo {
+  background-position: -1.73333333rem -6.8rem;
+}
+#wrapper .fill-message p {
+  font-size: 0.50666667rem;
+  color: #cad7da;
+  line-height: 0.66666667rem;
+  height: 0.66666667rem;
+}
+#wrapper .fill-message .tit {
+  height: 0.40540541rem;
+}
+#wrapper .fill-message .tit p {
+  font-size: 0.34666667rem;
+  color: #a9aaad;
+}
+#wrapper .fill-book {
+  width: 0.54666667rem;
+  height: 0.61333333rem;
+  position: absolute;
+  right: 0;
+  top: 0.6rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -5.90666667rem -6.90666667rem;
+}
+#wrapper .fill-discount {
+  height: 1.52rem;
+  background: url(../images/img/fill-youhuiquan_03.png) center no-repeat;
+  background-size: contain;
+  margin-top: 0.33333333rem;
+}
+#wrapper .fill-discount p {
+  line-height: 1.52rem;
+  font-size: 0.50666667rem;
+  margin-left: 3.06666667rem;
+  color: #676c73;
+}
+#wrapper .fill-discount p span {
+  float: right;
+  margin-right: 0.50666667rem;
+  color: #fae6bf;
+  font-size: 0.53333333rem;
+  font-weight: 700;
+}
+#wrapper .fill-debit {
+  height: 4.14666667rem;
+}
+#wrapper .fill-bill {
+  height: 1.06666667rem;
+  padding: 0.62666667rem 0.46666667rem 0 0.44rem;
+}
+#wrapper .fill-bill span {
+  float: right;
+  color: #ced3db;
+  font-size: 0.53333333rem;
+  font-weight: 700;
+  margin-top: 0.16rem;
+}
+#wrapper .fill-bill .bill-txt {
+  float: left;
+  margin-left: 0.26666667rem;
+}
+#wrapper .fill-bill .bill-txt p:nth-child(1) {
+  color: #a9aaad;
+  font-size: 0.34666667rem;
+}
+#wrapper .fill-bill .bill-txt p:nth-child(2) {
+  color: #888d94;
+  font-size: 0.50666667rem;
+}
+#wrapper .bill-photo {
+  float: left;
+  width: 0.92rem;
+  height: 0.92rem;
+  margin-top: 0.05333333rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -3.10666667rem -6.77333333rem;
+}
+#wrapper .fill-ask .bill-photo {
+  background-position: -4.54666667rem -6.78666667rem;
+}
+#wrapper .fill-notice {
+  margin-top: 0.54666667rem;
+}
+#wrapper .fill-notice b {
+  width: 0.33333333rem;
+  height: 0.33333333rem;
+  float: left;
+  text-align: center;
+  margin-right: 0.17333333rem;
+  margin-top: 0.2rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -5.84rem -5.6rem;
+}
+#wrapper .fill-notice p {
+  line-height: 0.64rem;
+  font-size: 0.37333333rem;
+  color: #a9aaad;
+}
+#wrapper .fill-notice p span {
+  color: #1ab2db;
+}
+#footer {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0;
+  width: 100%;
+  height: 1.30666667rem;
+  line-height: 1.30666667rem;
+  background-color: #fff;
+  position: absolute;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+}
+#footer div {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  color: #999;
+}
+#footer .detail-sum {
+  color: #f88412;
+  font-size: 0.64rem;
+}
+#footer .detail-sum i {
+  font-size: 0.37333333rem;
+  vertical-align: 0.08rem;
+}
+#footer .detail-sum a {
+  font-size: 0.32rem;
+  color: #676c73;
+  margin-left: 0.13333333rem;
+}
+#footer .detail-next {
+  background-color: #f1a30f;
+  color: #fff;
+  font-size: 0.4rem;
+}
+#footer .detail-next span {
+  font-size: 0.50666667rem;
+}

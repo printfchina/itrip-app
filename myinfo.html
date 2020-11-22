@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<title>个人中心</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/myinfo.css">
+
+	</head>
+
+	<body>
+		<!--头部搜索开始-->
+		<div id="header">
+			<header class="head-top">
+				<div class="go-back">
+					<a href="travel.html">
+						<i class="goback-icon"></i>
+					</a>
+				</div>
+				<div class="title">
+					<h3>个人</h3>
+				</div>
+				<div class="registertip">
+					<a href="login.html">登录/注册</a>
+				</div>
+			</header>
+			
+		</div>
+
+		<!--内容区域开始-->
+		<div id="wrapper">
+			<div id="scroller">
+				<!-- 头像区域 -->
+			    	<div class="personal-pho">
+			    		<div class="personal-img">
+			    			<div class="photo-my"></div>
+			    			<div class="camera">
+			    				<i class="camera-icon"></i>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<!-- 红包优惠券、积分 -->
+					<div class="personal-integral"> 
+						<div class="integral-tit">
+							<h2>您好 游客</h2>
+							<p>世界很大，抬脚出去荡~</p>
+						</div>
+						<div class="intergral-con">
+							<div class="con-ticket">
+								<p><b>¥</b><strong>50</strong></p>
+								<p>红包优惠券</p>
+							</div>
+							<div class="con-credits">
+								<p>1000<span>分</span></p>
+								<p>积分</p>
+							</div>
+						</div>
+					</div>
+			
+					<!-- 全部订单列表 -->
+					<div class="personal-orderlist">
+						<div class="personal-orderlist-t clearfix">
+							<ul>
+								<li class="orderall">
+									<span></span>
+									<p>全部订单</p>
+								</li>
+								<li>
+									<span></span>
+									<p>代付款</p>
+								</li>
+								<li>
+									<span></span>
+									<p>未出行</p>
+								</li>
+								<li>
+									<span></span>
+									<p>待点评</p>
+								</li>
+							</ul>
+						</div>
+						<div class="personal-orderlist-b">
+							<ul>
+								<li>
+									<b></b>
+									<p>我的相册</p>
+									<span></span>
+								</li>
+								<li>
+									<b></b>
+									<p>我的行程</p>
+									<span></span>
+								</li>
+								<li>
+									<b></b>
+									<p>我的游记</p>
+									<span></span>
+								</li>
+								<li>
+									<b></b>
+									<p>我的财富</p>
+									<span></span>
+								</li>
+							</ul>
+						</div>
+			
+					</div>
+			</div>
+		</div>
+
+		<!--底部开始-->
+		<div id="footer">
+			<a href="index.html" class="home">
+				<span></span>
+				<p>首页</p>
+			</a>
+			<a href="search.html" class="destination">
+				<span></span>
+				<p>目的地</p>
+			</a>
+			<a href="history.html" class="history">
+				<span></span>
+				<p>浏览历史</p>
+			</a>
+			<a href="myinfo.html" class="my active">
+				<span></span>
+				<p>个人</p>
+			</a>
+		</div>
+	</body>
+
+</html>
+<script src="lib/flexible.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/myinfo.js"></script>

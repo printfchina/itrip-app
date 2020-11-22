@@ -1,0 +1,459 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #f4f4f4;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+input::-webkit-input-placeholder {
+    color:#fff !important;
+    opacity: .8;
+} 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;
+    background-color:#1448ae;
+    
+    
+    .head-top {
+        display: flex; 
+        div {
+           display: flex; 
+           -webkit-box-flex: 1;
+           -webkit-flex: 1;
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -33/75rem;
+                } 
+            } 
+        }
+        .title {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+        }
+        
+    
+    }    
+  
+}
+
+// 中间的滚动容器
+#wrapper {
+   left:0;
+   right: 0;
+   z-index:1;
+   width: 10rem;
+   top:88/75rem; 
+   overflow:auto;
+   bottom:98/75rem; 
+   position:absolute;
+   margin: 0 auto; 
+      
+   #scroller {
+       z-index:1;
+       padding:0;
+       position:absolute; 
+   }
+   
+   .fill-box {
+      width: 10rem;
+      box-sizing: border-box;
+      padding: 40/75rem 30/75rem 40/75rem 24/75rem;
+      color: #888d94;
+      margin: 0 auto;
+
+    }
+    /* 预定限制 */
+    .fill-restrict{
+      padding:0 .15rem;
+
+        h3 {
+          font-size: 38/75rem;
+          padding: .2rem 0;      
+       }
+
+       p{
+          color: #a9aaad;
+          font-size: 32/75rem;
+          height: .56rem;
+          line-height: .56rem;
+
+          span {
+            color:#888d94; 
+          }
+
+          a{
+            float: right;
+            color: #888d94;
+            font-size: 28/75rem;
+          }
+
+        }
+
+
+    }
+    /* 选择出行人 */
+    .fill-select{
+      height: 2.9rem;
+      border: .03rem solid #cad7da;
+      border-radius: .3rem;
+      margin-top: .6rem;
+      background-color: #fff;
+
+      .fill-photo {
+        float: left;
+        margin: 47/75rem 20/75rem 0 34/75rem;
+        width: 69/75rem;
+        height: 69/75rem;
+        .sprite;
+        background-position: -34/75rem -509/75rem;
+      }
+
+      .fill-txt {
+        float:left;
+        width:545/75rem;
+
+        .tit{
+          height:43/75rem;
+          margin-top:47/75rem;
+          margin-bottom: 10/75rem;
+        }
+
+        span{
+          float:right;
+          font-size:40/75rem;
+          font-weight:700;
+          color:#ced3db;
+        }
+
+        h2{
+          float:left;
+          font-size: 38/75rem;
+        }
+
+        p {
+          width:100%;
+          float: left;
+          margin-bottom:5/75rem;
+        }
+
+
+
+      }
+
+
+    } 
+    /* 更换出行人员 */
+    
+    .fill-old {
+      height:45/75rem;
+      line-height: 45/75rem;
+      margin-top:48/75rem;
+      padding-left: 47/75rem;
+      padding-right:35/75rem;
+
+      b {
+      width:42/75rem;
+      height: 42/75rem;
+      border-radius: 24/75rem;
+      border:3/75rem solid #cad7da;
+      font-size: 26/75rem;
+      float: left;
+      text-align:center;
+      line-height: 42/75rem;
+      color: #cad7da;
+      margin-right: 30/75rem;
+    }
+
+    h2{
+      float:left;
+      font-size:38/75rem;
+    }
+
+    span {
+      float:right;
+      font-size:40/75rem;
+      font-weight:700;
+      color:#ced3db;
+    }
+
+    }
+
+    .fill-change {
+      height: 395/75rem;
+      margin-top:26/75rem;
+
+       div{
+        &:nth-child(3){
+          padding-left:125/75rem;
+          margin-top:40/75rem;
+
+          p{
+          font-size:26/75rem;
+          line-height:36/75rem;
+
+            &:nth-child(2){
+            font-size:32/75rem;
+            margin-top:15/75rem;
+
+              a{
+              color:#1aafd9;
+            }
+
+          }
+        }
+
+        }      
+      }
+
+    }
+    /* 联系人信息 */
+    .fill-message {
+      margin-top:26/75rem;
+      height: 250/75rem;
+
+      .fill-txt {
+          position:relative;
+
+          p {
+            span{
+            color:#888d94;
+            margin-left: 25/75rem;
+          }
+
+          }
+        }
+
+      .fill-photo {
+        background-position: -130/75rem -510/75rem;
+      }
+
+      p{
+        font-size:38/75rem;
+        color:#cad7da;
+        line-height:50/75rem;
+        height:50/75rem;
+      }
+
+
+      .tit {
+        height:30/74rem;
+        p {
+        font-size:26/75rem;
+        color:#a9aaad;
+      }
+
+      }
+
+    } 
+    .fill-book {
+      width:41/75rem;
+      height:46/75rem;
+      position:absolute;
+      right:0;
+      top:45/75rem;
+      .sprite;
+      background-position: -443/75rem -518/75rem;
+    }
+
+    /* 优惠券 */
+    .fill-discount {
+      height:114/75rem;
+      background:url(../images/img/fill-youhuiquan_03.png) center no-repeat;
+      background-size:contain;
+      margin-top:25/75rem;
+
+    }
+    .fill-discount p {
+      line-height: 114/75rem;
+      font-size: 38/75rem;
+      margin-left:230/75rem;
+      color:#676c73;
+
+        span{
+        float:right;
+        margin-right:38/75rem;
+        color:#fae6bf;
+        font-size:40/75rem;
+        font-weight:700;
+      }
+    }
+    
+
+    /* 发票 */
+    .fill-debit{
+      height:311/75rem;
+    }
+    .fill-bill {
+      height: 80/75rem;
+      padding: 47/75rem 35/75rem 0 33/75rem;
+
+      span {
+        float:right;
+        color:#ced3db;
+        font-size:40/75rem;
+        font-weight:700;
+        margin-top:12/75rem;
+      }
+
+      .bill-txt{
+        float:left;
+        margin-left:20/75rem;
+
+        p {
+            &:nth-child(1){
+              color:#a9aaad;
+              font-size:26/75rem;
+            }
+
+            &:nth-child(2){
+            color:#888d94;
+            font-size:38/75rem;
+          }
+        }
+
+      }
+
+
+    }
+
+    .bill-photo{
+      float: left;
+      width:69/75rem;
+      height:69/75rem;
+      margin-top:4/75rem;
+      .sprite;
+      background-position: -233/75rem -508/75rem;
+    }
+
+    .fill-ask {
+      .bill-photo{
+      background-position: -341/75rem -509/75rem;
+    }
+    }
+    /* 注意事项 */
+    .fill-notice{
+      margin-top:41/75rem;
+
+        b {
+        width:25/75rem;
+        height:25/75rem;
+        float:left;
+        text-align:center;
+        margin-right:13/75rem;
+        margin-top:15/75rem;
+        .sprite;
+        background-position: -438/75rem -420/75rem;
+      }
+
+
+      p{
+
+      line-height: 48/75rem;
+      font-size:28/75rem;
+      color:#a9aaad;
+
+      span {
+          color:#1ab2db;
+        }
+    }
+    } 
+
+}
+
+  
+
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    line-height: 98/75rem;
+    background-color: #fff;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    div {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+    }
+
+    .detail-sum {
+        color: #f88412;
+        font-size: 48/75rem;
+
+        i {
+          font-size: 28/75rem;
+          vertical-align: 6/75rem;
+        }
+
+        a {
+            font-size: 24/75rem;
+            color: #676c73;
+            margin-left: 10/75rem;
+        }
+    }
+
+    .detail-next {
+        background-color: #f1a30f;
+        color: #fff;
+        font-size: 30/75rem;
+
+        span {
+        font-size: 38/75rem;
+        }
+    }
+}

@@ -1,0 +1,361 @@
+body {
+    font-size: 12px;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    font-family: helvetica;
+    background: #f4f4f4;
+}
+.sizing {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sprite {
+    //引入雪碧图
+    background: url("../images/icon/sprites.png") no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+// 头部样式
+#header {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 88/75rem;
+    position: absolute;
+    line-height: 88/75rem;
+    background-color: #1448ae;
+    .head-top {
+        display: flex;
+        div {
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        .go-back {
+            display: flex;
+            flex: 1;
+            height: 88/75rem;
+            padding-left: 38/75rem;
+            .sizing;
+            .goback-icon {
+                width: 82/75rem;
+                height: 88/75rem;
+                line-height: 88/75rem;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 18/75rem;
+                    height: 33/75rem;
+                    .sprite;
+                    background-position: -104/75rem -33/75rem;
+                }
+            }
+        }
+        .title {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+        }
+        .registertip {
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+// 中间的滚动容器
+#wrapper {
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 10rem;
+    top: 88/75rem;
+    overflow: auto;
+    bottom: 98/75rem;
+    position: absolute;
+    margin: 0 auto;
+    #scroller {
+        z-index: 1;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+    }
+    /* 头像区域 */
+    .personal-pho {
+        width: 100%;
+        height: 122/75rem;
+        background-color: #1448ae;
+        position: relative;
+        .personal-img {
+            width: 166/75rem;
+            height: 166/75rem;
+            position: absolute;
+            border-radius: 50%;
+            top: 32/75rem;
+            left: 50%;
+            margin-left: -90/75rem;
+            border: 7/75rem solid #fff;
+            background-color: #ccc;
+            .photo-my {
+                width: 101/75rem;
+                height: 101/75rem;
+                position: absolute;
+                top: 32/75rem;
+                right: 32/75rem;
+                .sprite;
+                background-position: -511/75rem -797/75rem;
+            }
+            .camera {
+                width: 73/75rem;
+                height: 73/75rem;
+                border-radius: 50%;
+                background-color: #f2a410;
+                position: absolute;
+                top: 103/75rem;
+                right: -11/75rem;
+                z-index: 3;
+                .camera-icon {
+                    width: 51/75rem;
+                    height: 39/75rem;
+                    position: absolute;
+                    top: 17/75rem;
+                    right: 11/75rem;
+                    .sprite;
+                    background-position: -310/75rem -620/75rem;
+                }
+            }
+        }
+    }
+    /* 红包礼券、积分 */
+    .personal-integral {
+        width: 100%;
+        height: 294/75rem;
+        border-bottom: 2/75rem solid #cad7da;
+        text-align: center;
+        padding-top: 112/75rem;
+        .integral-tit {
+            width: 100%;
+            height: 135/75rem;
+            h2 {
+                color: #888d94;
+                font-size: 38/75rem;
+                height: 48/75rem;
+            }
+            p {
+                color: #a9aaad;
+                font-size: 28/75rem;
+            }
+        }
+        .intergral-con {
+            width: 100%;
+            .con-ticket {
+                float: left;
+                width: 50%;
+                border-right: 3/75rem dashed #cad7da;
+                box-sizing: border-box;
+                height: 134/75rem;
+                p:nth-child(1) {
+                    color: #676c73;
+                    position: relative;
+                    b {
+                        font-size: 36/75rem;
+                        font-weight: normal;
+                        position: absolute;
+                        top: 8/75rem;
+                        left: 130/75rem;
+                    }
+                    strong {
+                        font-size: 64/75rem;
+                        font-weight: normal;
+                    }
+                }
+                p:nth-child(2) {
+                    color: #979da4;
+                    font-size: 28/75rem;
+                }
+            }
+            .con-credits {
+                float: left;
+                width: 50%;
+                p:nth-child(1) {
+                    color: #676c73;
+                    font-size: 64/75rem;
+                    span {
+                        font-size: 28/75rem;
+                    }
+                }
+                p:nth-child(2) {
+                    color: #979da4;
+                    font-size: 28/75rem;
+                }
+            }
+        }
+    }
+    /* 全部订单列表 */
+    .personal-orderlist {
+        width: 100%;
+        height: 720/75rem;
+        background-color: #fff;
+        .personal-orderlist-t {
+            li {
+                float: left;
+                width: 2.5rem;
+                height: 212/75rem;
+                text-align: center;
+                color: #676c73;
+                font-size: 28/75rem;
+                span {
+                    width: 66/75rem;
+                    height: 84/75rem;
+                    display: inline-block;
+                    margin-top: 42/75rem;
+                    .sprite;
+                    background-position: -43/75rem -707/75rem;
+                }
+            }
+            li:nth-child(2) {
+                span {
+                    background-position: -157/75rem -707/75rem;
+                }
+            }
+            li:nth-child(3) {
+                span {
+                    width: 76/75rem;
+                    background-position: -267/75rem -707/75rem;
+                }
+            }
+            li:nth-child(4) {
+                span {
+                    width: 72/75rem;
+                    background-position: -383/75rem -707/75rem;
+                }
+            }
+        }
+        .personal-orderlist-b {
+            li {
+                height: 127/75rem;
+                width: 100%;
+                padding: 0 72/75rem 0 62/75rem;
+                line-height: 127/75rem;
+                color: #676c73;
+                font-size: 32/75rem;
+                position: relative;
+                b {
+                    width: 63/75rem;
+                    height: 63/75rem;
+                    float: left;
+                    margin-top: 30/75rem;
+                    margin-right: 20/75rem;
+                    .sprite;
+                    background-position: -43/75rem -835/75rem;
+                }
+                p {
+                    float: left;
+                }
+                span {
+                    float: left;
+                    width: 31/75rem;
+                    height: 53/75rem;
+                    background: url("../images/icon/arrow_03.png") center no-repeat;
+                    z-index: 1;
+                    margin-left: 372/75rem;
+                    margin-top: 38/75rem;
+                    background-size: contain;
+                }
+            }
+            li:nth-child(2) {
+                b {
+                    background-position: -157/75rem -835/75rem;
+                }                
+            }
+            li:nth-child(3) {
+                b {
+                    background-position: -271/75rem -835/75rem;
+                }                
+            }
+            li:nth-child(4) {
+                b {
+                   background-position: -385/75rem -835/75rem; 
+                }                
+            }
+        }
+    }
+}
+//底部样式
+#footer {
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 0;
+    width: 100%;
+    height: 98/75rem;
+    background-color: #ededed;
+    position: absolute;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    a {
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+        span {
+            display: block;
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 10/75rem auto 3/75rem;
+        }
+        &.active {
+            color: #1448ae;
+        }
+    }
+    .home {
+        span {
+            width: 54/75rem;
+            height: 48/75rem;
+            background-image: url("../images/icon/footer_0322_05.png");
+        }
+    }
+    .destination {
+        span {
+            width: 48/75rem;
+            height: 49/75rem;
+            background-image: url("../images/icon/footer_0322_06.png");
+        }
+    }
+    .history {
+        span {
+            width: 53/75rem;
+            height: 50/75rem;
+            background-image: url("../images/icon/footer_0322_07.png");
+        }
+    }
+    .my {
+        span {
+            width: 50/75rem;
+            height: 49/75rem;
+            background-image: url("../images/icon/footer_0322_04.png");
+        }
+    }
+    p {
+        font-size: 23/75rem;
+    }
+}

@@ -1,0 +1,356 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #eee;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+// input::-webkit-input-placeholder {
+//     color:#fff !important;
+//     opacity: .8;
+// } 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;  
+    background-color: #1448ae;  
+    
+    .head-top {
+        display: flex; 
+        div {
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -34/75rem;
+                } 
+            } 
+        }
+        .title {
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+            
+            h3 {
+              font-weight: 500;
+              line-height: 88/75rem;
+            }
+        }
+    
+        .register {
+            font-size: 24/75rem;
+            text-align: center;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+// 中间的滚动容器
+#wrapper {
+    left:0;
+    right: 0;
+    z-index:1;
+    width: 10rem;
+    top:88/75rem; 
+    overflow:auto;
+    bottom:98/75rem; 
+    position:absolute;
+    margin: 0 auto; 
+    
+    #scroller {
+        z-index:1;
+        padding:0;
+        position:absolute; 
+    }
+    //兼容移动端日历插件开始
+    .mbsc-mobiscroll .dwwr {
+        background-color: #fff;
+    }
+    .mbsc-mobiscroll .dw-cal-btnc {
+        padding: 15/75rem 0;
+        font-size: 36/75rem;
+    }
+    .mbsc-mobiscroll .dw-cal-btn-txt {
+        color: #1ab2db;
+    }
+
+    .dw-cal .dw-cal-btn {
+        width: 100/75rem;
+    }
+    
+    .mbsc-mobiscroll .dw-cal-c {
+        .sizing;
+    }
+
+   .mbsc-mobiscroll .dw-cal-days {
+        color: #1ab2db;
+   }
+   .mbsc-mobiscroll .dw-cal-days th {
+        border-bottom: 1px solid #1ab2db;
+        font-size: 34/75rem;
+        padding: 20/75rem 0;
+   }
+   .dw-cal-slide {
+    padding: 30/75rem 0 ;
+   }
+    .dw-cal-day-fg {
+        padding: 20/75rem 5/75rem;
+    }
+   .mbsc-mobiscroll .dw-cal-day-fg {
+        font-size: 34/75rem;
+   }
+
+   .mbsc-mobiscroll .dw-cal-day-m-c {
+    width: 20/75rem;
+    height: 5/75rem;
+   }
+
+   /* 计数开始 */
+
+   .set-time {
+        background: #fff;
+        margin: 20/75rem 0;
+
+        .select-num {
+            position: relative;
+
+            .man-box {
+                width: 10rem;
+                .sizing;
+                line-height: 62/75rem;
+                padding: 20/75rem 15/75rem 20/75rem 0;
+                border-bottom: #dcdcdc 1px solid;  
+
+                span {
+                    float: left;
+                    font-size: 30/75rem;
+                    color: #666;
+                    margin-left: 45/75rem;
+                }  
+
+                .man-box-price {
+                    float: left;
+                    color: #f88412;
+                    margin-left: 20/75rem;
+                    font-size: 28/75rem;
+                }   
+
+                .man-box-num {
+                    float: right;
+                    margin-right: 32/75rem;
+                    color: #999;
+                    font-size: 30/75rem;
+
+                    .change-box-left{
+                        width: 52/75rem;
+                        height: 60/75rem;
+                        border: 1px solid #ccc;
+                        border-top-left-radius: 5/75rem;
+                        border-bottom-left-radius: 5/75rem;
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        font-size: 30/75rem;
+                    }
+
+                    input{
+                        width: 80/75rem;
+                        height: 60/75rem;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                        float: left;
+                        text-align: center;
+                        background: #e5e5e5;
+                        color: #666;
+                    }
+
+                    .change-box-right{
+                        width: 52/75rem;
+                        height: 60/75rem;
+                        border: 1px solid #ccc;
+                        border-top-right-radius: 5/75rem;
+                        border-bottom-right-radius: 5/75rem;
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        margin-left: 0;
+                        font-size: 30/75rem;
+
+                    }
+
+
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }  
+            }
+
+            .infant-box {
+                position: relative;
+
+                .cur {
+                    border-color: #1ab2db;
+                    background: #1ab2db;
+
+                    &:after {
+                        content: "";
+                        width: 12/75rem;
+                        height: 28/75rem;
+                        position: absolute;
+                        left: 12/75rem;
+                        top: -2/75rem;
+                        border-top: 2px solid #fff;
+                        border-left: 2px solid #fff;
+                        z-index: 3;
+                        -webkit-transform: rotate(225deg);
+                        transform: rotate(225deg);
+                    }
+                }
+
+                i {
+                    width: 34/75rem;
+                    height: 34/75rem;
+                    border: 1px solid #999;
+                    border-radius: 4/75rem;
+                    position: absolute;
+                    left: 45/75rem;
+                    top: 35/75rem;
+
+                }
+                span {
+                    margin-left: 95/75rem;
+                }
+
+                em {
+                    float: left;
+                    color: #999;
+                    margin-left: 20/75rem;
+                    font-size: 28/75rem;
+
+                }
+            }
+
+            .set-tip {
+                padding-left: 45/75rem;
+                line-height: 35/75rem;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 25/75rem;
+                    height: 25/75rem;
+                    .sprite;
+                    background-position: -438/75rem -420/75rem;
+                }
+
+                em{
+                    font-size: 24/75rem;
+                    color: #999;
+                }
+
+                i{
+                    color: #f88412;
+                }
+            }
+        }
+   }
+
+
+}
+
+
+
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    line-height: 98/75rem;
+    background-color: #fff;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    div {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+    }
+
+    .detail-sum {
+        color: #f88412;
+        font-size: 34/75rem;
+
+        a {
+            font-size: 24/75rem;
+            color: #f88412;
+            margin-left: 10/75rem;
+        }
+    }
+
+    .detail-next {
+        background-color: #f1a30f;
+        color: #fff;
+        font-size: 30/75rem;
+        a {
+          color: #fff;  
+        }
+        span {
+        font-size: 38/75rem;
+        }
+
+        s {
+            text-decoration: none;
+        }
+    }
+}

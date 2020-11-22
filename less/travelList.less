@@ -1,0 +1,428 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #fff;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+ .sprite {
+     //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+ }
+input::-webkit-input-placeholder {
+    color:#fff !important;
+    opacity: .8;
+} 
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+}
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;
+    display:table;
+    padding-right: 46/75rem;
+    background-color:#1448ae;
+    .sizing;
+    
+    .go-back {
+        display: table-cell;
+        width: 82/75rem;
+        height: 88/75rem;
+        text-align: center;
+
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -33/75rem;
+            }
+            
+            
+        }
+        
+    }
+    
+    .search-main {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        
+        .search-wrapper {
+            display: table;
+            border-radius: 37.5/75rem;
+            width: 100%;
+            height: 48/75rem;
+            font-size: 28/75rem;
+            line-height: normal;
+            border: 1px solid #fff;
+            .sizing;
+            
+            .start {
+                display: table-cell;
+                width: 146/75rem;
+                padding: 10/75rem;
+                text-align: center;
+                border-right: 1px solid #fff;
+                .sizing;
+                position: relative;
+                span {
+                    margin-left: 14/75rem;
+                    &:before{
+                    content:"";
+                    display: inline-block;
+                    vertical-align: -5/75rem;
+                    width: 25/75rem;
+                    height: 33/75rem;
+                    position: absolute;
+                    left: 15/75rem;
+                    .sprite;
+                    background-position: -623/75rem -262/75rem;
+                    }
+            
+                }
+            }
+            .search-box {
+                display: table-cell;
+                padding-left: 67/75rem;
+                position: relative;
+                white-space: nowrap;
+                
+                &:before{
+                    content:"";
+                    display: inline-block;
+                    vertical-align: -5/75rem;
+                    width: 33/75rem;
+                    height: 32/75rem;
+                    position: absolute;
+                    left: 15/75rem;
+                    top: 12/75rem;
+                    .sprite;
+                    background-position: -388/75rem -183/75rem;
+                    }
+                    
+                    
+            }    
+            
+        }
+    }
+ 
+}
+
+// 中间的滚动容器
+#wrapper {
+    left:0;
+    z-index:1;
+    width:100%;
+    top:88/75rem; 
+    overflow:auto;
+    bottom:98/75rem; 
+    position:absolute; 
+    
+    #scroller {
+        z-index:1;
+        width:100%;
+        padding:0;
+        position:absolute; 
+    }
+   //nav-Tab开始
+       .nav-tab {
+            width:10rem;
+            height:90/75rem;
+            line-height: 84/75rem;
+            background-color: #f4f4f4;
+            margin: 0 auto;
+            
+            ul{
+                display: flex; 
+               li {
+                border-top:6/75rem solid transparent;
+                float: left;
+                display: flex; 
+                -webkit-box-flex: 1;
+                flex: 1;
+                justify-content: center;
+                font-size: 28/75rem;
+                .sizing;
+                
+                &:nth-child(2){
+                  -webkit-box-flex: 2;
+                   flex: 2;  
+                }
+                &:nth-child(3){
+                  -webkit-box-flex: 2;
+                   flex: 2;  
+                }
+            }
+            
+            .nav-active{
+            color:#1448ae;
+            background-color:#fff;
+            border-top: 6/75rem solid #f7c612;
+            }
+         
+            }
+            
+       }
+       
+       //Tab-panel 面板开始
+       
+      .tab-panel {
+           width: 10rem;
+           padding-right: 22/75rem;
+           padding-left: 24/75rem;
+           background-color: #fff;
+           .sizing;
+           overflow: hidden;
+           margin: 0 auto;
+           .panel-item {
+               display: none;
+               
+               .item-container {
+                   padding: 36/75rem 0 30/75rem 0;
+                   border-bottom: 1px solid #ccc;
+                   overflow: hidden;
+                   .tour-img {
+                       float: left;
+                       position: relative;
+                       overflow: hidden;
+                       width: 198/75rem;
+                       height: 173/75rem;
+                       border: 1px solid #ccc;
+
+                       img {
+                           display: block;
+                           width: 100%;
+                       }
+                       
+                       i {
+                           display: inline-block;
+                           position: absolute;
+                           top: 0;
+                           right: 0;
+                           width: 71/75rem;
+                           height: 71/75rem;
+                           .sprite;
+                           background-position: -504/75rem -712/75rem;
+                       }
+                   }
+                   .tour-content {
+                       float: right;
+                       position: relative;
+                       width: 490/75rem;
+                       
+                       h3 {
+                           font-size: 28/75rem;
+                           color: #333;
+                           font-weight: 500;
+                           white-space: nowrap;
+                           overflow: hidden;
+                           text-overflow: ellipsis;
+                           margin-top: -5/75rem;
+                       }
+                       
+                       .tour-icon {
+                         margin: 5/75rem 0;
+                           
+                           span {
+                              padding: 4/75rem 8/75rem;
+                              border: 1px solid #999; 
+                              margin-right: 12/75rem;
+                              font-size: 21/75rem;
+                              color: #666;
+                           }
+                           .icon-com {
+                               background-color: #1ab2db;
+                                border: 1px solid #1ab2db;
+                                color: #fff;
+                           }
+                       }
+                       .tour-info {
+                           font-size: 24/75rem;
+                           dt {
+                               float: left;
+                               color: #00cc66;
+                               margin-right: 10/75rem;
+                           }
+                           
+                           dd {
+                               float: left;
+                               width: 310/75rem;
+                               white-space: nowrap;
+                               overflow: hidden;
+                               text-overflow: ellipsis;
+                           }
+                       }
+                       .tour-schedule {
+                           font-size: 24/75rem;
+                       }
+                       .tour-des {
+                           position: relative;
+                           margin-top: -5/75rem;
+                           .price {
+                               font-size: 14/75rem;
+                             em {
+                                 color: #f88412;
+                                 font-size: 14/75rem;
+                                 padding-right: 2/75rem;
+                                 vertical-align: 6/75rem;
+                             } 
+                             strong {
+                                 color: #f88412;
+                                 font-size: 34/75rem;
+                             } 
+                           }
+                           .tral,.comment {
+                               font-size: 24/75rem;
+                               color: #999;
+                               margin: 0 10/75rem;
+                                i {
+                                    color: #666;
+                                }
+                           }
+                           .grade {
+                               background-color: #f6f6f6;
+                               border: 1px solid #999;
+                               padding: 2/75rem 12/75rem;
+                               position: absolute;
+                               right: 0;
+                               bottom: 0;
+                               
+                               strong {
+                                   color: #666;
+                                   font-size: 34/75rem;
+                               }
+                           }
+                       }
+                   }
+                   &:last-child {
+                       border-bottom: none;
+                   }
+               }
+           }
+      }
+}
+//返回顶部
+#Top{
+    display: none;
+    right: 20/75rem;
+    bottom: 140/75rem;
+    position: fixed;
+    width: 88/75rem;
+    height: 88/75rem;
+    line-height: 124/75rem;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #CCC;
+    background-color:rgba(255,255,255, .8);
+    z-index: 99999;
+    font-size: 24/75rem;
+    color: #666;
+    transition: all 0.6s;
+    
+    &:before {
+        content:"";
+        display: inline-block;
+        width: 29/75rem;
+        height: 31/75rem;
+        .sprite;
+        background-position: -396/75rem -628/75rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 10/75rem auto 0;
+    }
+    }
+
+
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    background-color: #ededed;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    a {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+        
+        span {
+            display: block;
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 10/75rem auto 3/75rem;
+        }
+        &.active {
+            color: #1448ae;
+            span {
+                background-image: url(../images/icon/luggage_01.png);
+            }
+        }
+    }
+    .home {
+        span {
+           width: 54/75rem;
+           height: 48/75rem;
+           background-image: url(../images/icon/footer_0322_05.png);
+        }
+    }
+    .destination {
+        span {
+           width: 48/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_06.png);
+        }
+    }
+    .history {
+        span {
+           width: 53/75rem;
+           height: 50/75rem;
+           background-image: url(../images/icon/footer_0322_07.png);
+        }
+    }
+    .my {
+        span {
+           width: 50/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_08.png);
+        }
+    }
+    p {
+        font-size: 23/75rem;
+    }
+}

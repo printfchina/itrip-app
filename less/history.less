@@ -1,0 +1,285 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #fff;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+// input::-webkit-input-placeholder {
+//     color:#fff !important;
+//     opacity: .8;
+// } 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:88/75rem;
+    position:absolute; 
+    line-height:88/75rem;  
+    background-color: #1448ae;  
+    
+    .head-top {
+        display: flex; 
+        div {
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -34/75rem;
+                } 
+            } 
+        }
+        .title {
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+            
+            h3 {
+              font-weight: 500;
+            }
+        }
+    
+        .register {
+            font-size: 28/75rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+}
+
+// 中间的滚动容器
+#wrapper {
+    left:0;
+    right: 0;
+    z-index:1;
+    width: 10rem;
+    top:88/75rem; 
+    overflow:auto;
+    bottom:98/75rem; 
+    position:absolute;
+    margin: 0 auto; 
+    
+    #scroller {
+        z-index:1;
+        padding:0;
+        position:absolute; 
+    }
+    //主要内容开始
+    .main {
+        width: 10rem;
+        padding: 15/75rem 24/75rem 24/75rem;
+        .sizing;
+        
+        .history-list {
+            .history-time {
+                font-size: 28/75rem;
+                color: #666;
+                margin-bottom: 10/75rem;
+            }
+            .history-item {
+                &:last-child {
+                  .his-content {
+                    border-left: none;
+                  }
+                }
+                .his-icon {
+                    position: relative;
+                    z-index: 2;
+                   display: inline-block;
+                   width: 45/75rem;
+                   height: 45/75rem;
+                   background-color: #1ab2db; 
+                   border-radius: 100%;
+                   text-align: center;
+                   
+                   &:before {
+                       content: '';
+                       display: inline-block;
+                       width: 24/75rem;
+                       height: 27/75rem;
+                       .sprite;
+                       background-position: -690/75rem -264/75rem;
+                       margin-top: 10/75rem;
+
+                   }
+                }
+                .his-content {
+                    position: relative;
+                    top:0;
+                    left: 23/75rem;
+                    border-left: 1px solid #ccc;
+
+                    .his-wrapper {
+                        position: relative;
+                        top: -50/75rem;
+                        width: 625/75rem;
+                        background-color: #f4f4f4;
+                        margin-left: 50/75rem;
+                        padding: 26/75rem 16/75rem;
+                        border-radius: 10/75rem;
+                        .sizing;
+
+                        
+                        &:before {
+                            position: absolute;
+                            left: -30/75rem;
+                            top: 20/75rem;
+                            content: '';
+                            font-size: 0;  
+                            line-height: 0;  
+                            border: 12/75rem solid transparent;
+                            border-right: 24/75rem solid #f4f4f4;
+                            width: 0;
+                            height: 0; 
+                        }
+                        
+                        .his-tit {
+                            float: left;
+                            width: 430/75rem;
+                            
+                            h3 {
+                            //两行显示，多余的用...
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: box;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            font-size: 30/75rem;
+                            color: #666;
+                            margin-bottom: 10/75rem;
+                            }
+                            
+                            .sale-price {
+                              color: #f90;
+                              font-size: 30/75rem;
+                              em {
+                                  font-size: 20/75rem;
+                                  color: #999;
+                              }
+                          }
+                        }
+
+                        .his-img {
+                          float: right;
+                          width: 133/75rem;
+                          height: 110/75rem;
+                          
+                          img {
+                            display: block;
+                            width: 100%;
+                            border-radius: 8/75rem; 
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   
+
+}
+
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    background-color: #ededed;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    a {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+        
+        span {
+            display: block;
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 10/75rem auto 3/75rem;
+        }
+        &.active {
+            color: #1448ae;
+        }
+    }
+    .home {
+        span {
+           width: 54/75rem;
+           height: 48/75rem;
+           background-image: url(../images/icon/footer_0322_05.png);
+        }
+    }
+    .destination {
+        span {
+           width: 48/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_06.png);
+        }
+    }
+    .history {
+        span {
+           width: 53/75rem;
+           height: 50/75rem;
+           background-image: url(../images/icon/footer_0322_03.png);
+        }
+    }
+    .my {
+        span {
+           width: 50/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_08.png);
+        }
+    }
+    p {
+        font-size: 23/75rem;
+    }
+}

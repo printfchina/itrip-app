@@ -1,0 +1,318 @@
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background: #f4f4f4;
+}
+ .sizing {
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+input::-webkit-input-placeholder {
+    color:#fff !important;
+    opacity: .8;
+} 
+.sprite {
+    //引入雪碧图
+    background: url(../images/icon/sprites.png) no-repeat;
+    // 整张雪碧图的宽度为750px,
+    background-size: 750/75rem auto;
+}
+h1,h2,h3,h4,h5,h6 {   
+font-size:100%;   
+font-weight:normal;   
+} 
+
+// 头部样式
+#header {
+    top:0; 
+    left:0;
+    z-index:2;
+    width:100%;
+    height:176/75rem;
+    position:absolute; 
+    line-height:88/75rem;
+    background-color:#1448ae;
+    
+    
+    .head-top {
+        display: flex; 
+        div {
+           display: flex; 
+           -webkit-box-flex: 1;
+           -webkit-flex: 1;
+            flex: 1;
+        }
+        
+        .go-back {
+        display: flex;
+        flex: 1;
+        height: 88/75rem;
+        padding-left: 38/75rem;
+        .sizing;
+    
+        .goback-icon {
+            width: 82/75rem;
+            height: 88/75rem;
+            line-height: 88/75rem;
+            
+            &:before{
+                content:"";
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/75rem;
+                height: 33/75rem;
+                .sprite;
+                background-position: -104/75rem -33/75rem;
+                } 
+            } 
+        }
+        .title {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+            font-size: 32/75rem;
+            color: #fff;
+            text-align: center;
+        }
+        
+    
+    }
+    
+    .search-wrap {
+        padding: 0 36/75rem;
+        margin-top: 14/75rem;
+        width: 100%;
+        height: 60/75rem;
+         .sizing;
+    }
+    
+    .search-box {
+       position: relative;
+       z-index: 1;
+       padding-left: 12/75rem ;
+       height: 58/75rem;
+       line-height: 58/75rem;
+       border-radius: 37.5/75rem;
+       border: 1px solid #8aa4d7;
+       
+       &:before {
+            content: ''; 
+            display: block;
+            position: absolute;
+            top: 14/75rem;
+            left: 12/75rem;
+            width: 33/75rem;
+            height: 33/75rem;
+            .sprite;
+            // 该背景图在雪碧图的位置
+            background-position: -388/75rem -183/75rem;
+            
+       }
+       
+       input {
+           padding-left: 50/75rem;
+           width: 100%;
+           font-size: 28/75rem;
+           height: 58/75rem;
+           line-height: 58/75rem;
+           background-color: transparent;
+           color: #333;
+           .sizing;
+       }
+    }
+}
+
+   //nav开始
+   .nav {
+       position: absolute;
+       top:176/75rem;  
+       bottom: 98/75rem;
+       width: 128/75rem;
+       overflow: hidden;
+       
+       ul {
+        width: 128/75rem;
+        height: 100%;
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: scroll;
+       }
+       
+       .nav-blur {
+        height: 180/75rem;
+        color: #666;
+        border-left: 8/75rem solid transparent;
+        .sizing; 
+        
+        i{
+            display: inline-block;
+            margin-top: 45/75rem;
+            width: 49/75rem;
+            height: 49/75rem;
+            .sprite; 
+        }
+        
+        p{
+            font-size: 32/75rem;
+        }
+        
+        &:first-child {
+            i{
+              width: 47/75rem;
+              height: 47/75rem;
+              background-position: -457/75rem -102/75rem; 
+            }
+        }
+        
+        &:nth-child(2) {
+            i{
+              width: 47/75rem;
+              height: 51/75rem;
+              background-position: -542/75rem -102/75rem; 
+            }
+        }
+        
+        &:nth-child(3){
+            i{
+              width: 51/75rem;
+              height: 51/75rem;
+              background-position: -626/75rem -102/75rem; 
+            }
+        }
+        
+        .nav-bp1 {
+            background-position: -455/75rem -181/75rem!important;
+        }
+        .nav-bp2 {
+            background-position: -541/75rem -179/75rem!important;;
+        }
+        .nav-bp3 {
+            background-position: -624/75rem -179/75rem!important;;
+        }
+        
+       }
+       
+       .nav-current{
+            color:#1448ae;
+            background-color:#fff;
+            border-left: 8/75rem solid #f7c612;
+        }
+        
+        
+
+   }
+   
+   //商品开始
+   .pro {
+       width: 590/75rem;
+       position: absolute;
+       top:176/75rem; 
+       bottom: 98/75rem;
+       left: 128/75rem;
+       padding: 16/75rem;
+       padding-right: 22/75rem;
+       padding-bottom: 0;
+       background-color: #fff;
+       overflow: hidden;
+       
+       .pro-scroll {
+           display: none;
+           height: 100%;
+           overflow-y: scroll;
+           
+           a {
+               float: left;
+               width: 286/75rem;
+               border: 1px solid #ccc;
+               margin-bottom: 16/75rem;
+               overflow: hidden;
+               
+               img {
+                   display: block;
+                   width: 100%;
+               }
+               
+               span {
+                   display: block;
+                   height: 54/75rem;
+                   line-height: 54/75rem;
+                   text-align: center;
+                   font-size: 28/75rem;
+                   color: #333;
+               }
+               
+               &:nth-child(2n) {
+                   margin-right: 0;
+                   float: right;
+               }
+           }
+       }
+       
+   }
+    
+//底部样式
+#footer {
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:0;
+    width:100%;
+    height:98/75rem;
+    background-color: #ededed;
+    position:absolute;
+    border-top:1px solid #e0e0e0;
+    display: flex; 
+    
+    a {  
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        display: block;
+        color: #999;
+        
+        span {
+            display: block;
+            background-position: 50% 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 10/75rem auto 3/75rem;
+        }
+        &.active {
+            color: #1448ae;
+        }
+    }
+    .home {
+        span {
+           width: 54/75rem;
+           height: 48/75rem;
+           background-image: url(../images/icon/footer_0322_05.png);
+        }
+    }
+    .destination {
+        span {
+           width: 48/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_02.png);
+        }
+    }
+    .history {
+        span {
+           width: 53/75rem;
+           height: 50/75rem;
+           background-image: url(../images/icon/footer_0322_07.png);
+        }
+    }
+    .my {
+        span {
+           width: 50/75rem;
+           height: 49/75rem;
+           background-image: url(../images/icon/footer_0322_08.png);
+        }
+    }
+    p {
+        font-size: 23/75rem;
+    }
+}

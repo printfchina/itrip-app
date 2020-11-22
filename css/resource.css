@@ -1,0 +1,555 @@
+body {
+  font-size: 12px;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  font-family: helvetica;
+  background: #f4f4f4;
+}
+.sizing {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sprite {
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+#header {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 1.17333333rem;
+  position: absolute;
+  line-height: 1.17333333rem;
+  background-color: #1448ae;
+}
+#header .head-top {
+  display: flex;
+}
+#header .head-top div {
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+#header .head-top .go-back {
+  display: flex;
+  flex: 1;
+  height: 1.17333333rem;
+  padding-left: 0.50666667rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#header .head-top .go-back .goback-icon {
+  width: 1.09333333rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+}
+#header .head-top .go-back .goback-icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.24rem;
+  height: 0.44rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -1.38666667rem -0.44rem;
+}
+#header .head-top .title {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  font-size: 0.42666667rem;
+  color: #fff;
+  text-align: center;
+}
+#wrapper {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 10rem;
+  top: 1.17333333rem;
+  overflow: auto;
+  bottom: 1.30666667rem;
+  position: absolute;
+  margin: 0 auto;
+  /* 总额明细 */
+  /* 三亚-北京 */
+  /* 套餐券 */
+  /* 额外费用账单 */
+}
+#wrapper #scroller {
+  z-index: 1;
+  padding: 0;
+  position: absolute;
+}
+#wrapper .resource-box {
+  width: 10rem;
+  padding: 0.77333333rem 0.32rem 0.42666667rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper .resource-detail {
+  color: #888d94;
+  margin-bottom: 0.66666667rem;
+  padding: 0 0.13333333rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper .resource-detail .detail-l {
+  float: left;
+}
+#wrapper .resource-detail .detail-l h2 {
+  font-size: 0.50666667rem;
+  margin-bottom: 0.26666667rem;
+}
+#wrapper .resource-detail .detail-l p {
+  font-size: 0.37333333rem;
+  color: #a9aaad;
+  line-height: 0.53333333rem;
+}
+#wrapper .resource-detail .detail-l p span {
+  color: #888d94;
+}
+#wrapper .resource-detail .detail-r {
+  float: right;
+}
+#wrapper .resource-detail .detail-r .detail-r-num {
+  color: #f88412;
+  position: relative;
+  margin-bottom: 0.26666667rem;
+}
+#wrapper .resource-detail .detail-r .detail-r-num b {
+  font-size: 0.48rem;
+  font-weight: normal;
+  position: absolute;
+  top: 0.10666667rem;
+  left: -0.2rem;
+}
+#wrapper .resource-detail .detail-r .detail-r-num strong {
+  font-size: 0.82666667rem;
+}
+#wrapper .resource-detail .detail-r .detail-all {
+  font-size: 0.37333333rem;
+  text-align: right;
+}
+#wrapper .resource-hangban {
+  margin-bottom: 0.33333333rem;
+}
+#wrapper .resource-reelect {
+  border-left: 0.01333333rem dashed #c0c0c0;
+  height: 2.77333333rem;
+  padding: 0.6rem 0 0;
+  position: relative;
+  text-align: center;
+  width: 9.2rem;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 0.30666667rem;
+  border: 0.02666667rem solid #cad7da;
+  border-bottom: 0.02666667rem dashed #cad7da;
+  padding: 0.4rem 0.66666667rem 0;
+  box-sizing: border-box;
+}
+#wrapper .resource-reelect h2 {
+  font-size: 0.8rem;
+  color: #888d94;
+}
+#wrapper .resource-reelect p {
+  font-size: 0.37333333rem;
+  color: #a9aaad;
+}
+#wrapper .resource-content::before,
+#wrapper .resource-content::after {
+  background-color: #f0f0f0;
+  border-radius: 0.21333333rem;
+  content: " ";
+  height: 0.45333333rem;
+  top: -0.21333333rem;
+  position: absolute;
+  width: 0.45333333rem;
+}
+#wrapper .resource-content::before {
+  box-shadow: -0.02666667rem 0 0.01333333rem #cccccc inset;
+  left: -0.21333333rem;
+}
+#wrapper .resource-content::after {
+  box-shadow: 0.02666667rem 0 0.01333333rem #cccccc inset;
+  right: -0.21333333rem;
+}
+#wrapper .resource-content {
+  background-color: #f9f9f9;
+  height: 6.98666667rem;
+  width: 9.2rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 0.30666667rem;
+  border: 0.02666667rem solid #cad7da;
+  border-top: none;
+  padding: 0.70666667rem 0 0 0;
+  box-sizing: border-box;
+}
+#wrapper .resource-content li {
+  float: left;
+  width: 3.86666667rem;
+  padding-left: 0.66666667rem;
+  margin-bottom: 0.53333333rem;
+}
+#wrapper .resource-content li span {
+  display: block;
+  color: #a9aaad;
+  font-size: 0.37333333rem;
+  height: 0.53333333rem;
+}
+#wrapper .resource-content li p {
+  color: #676c73;
+  font-size: 0.42666667rem;
+}
+#wrapper .resource-content li p b {
+  font-weight: normal;
+  font-size: 0.32rem;
+  margin-left: 0.13333333rem;
+}
+#wrapper .resource-content li p i {
+  font-style: normal;
+  font-size: 0.37333333rem;
+  margin-left: 0.13333333rem;
+}
+#wrapper .begin-place,
+#wrapper .ariplane,
+#wrapper .end-place {
+  float: left;
+}
+#wrapper .ariplane {
+  margin: 0 1.06666667rem;
+  width: 0.94666667rem;
+  height: 0.70666667rem;
+  margin-top: 0.34666667rem;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -6.77333333rem -5.42666667rem;
+}
+#wrapper .resource-content li:nth-child(5) p,
+#wrapper .resource-content li:nth-child(6) p {
+  font-size: 0.37333333rem;
+}
+#wrapper .resource-content li:nth-child(5) p b,
+#wrapper .resource-content li:nth-child(6) p b {
+  font-size: 0.42666667rem;
+}
+#wrapper .resource-content li:nth-child(7) a {
+  font-size: 0.37333333rem;
+  color: #676c73;
+  text-decoration: underline;
+}
+#wrapper .resource-content li:nth-child(8) a {
+  font-size: 0.42666667rem;
+  color: #1aafd9;
+}
+#wrapper .quan-01 {
+  width: 100%;
+  height: 2.86666667rem;
+  background: url(../images/img/quan_03.png) center no-repeat;
+  background-size: contain;
+  margin-bottom: 0.33333333rem;
+}
+#wrapper .quan-01 .quan-01-con {
+  width: 4.50666667rem;
+  height: 2.4rem;
+  float: right;
+  margin: 0.21333333rem 0.6rem 0 0;
+  padding: 0.26666667rem 0 0 0.4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.37333333rem;
+}
+#wrapper .quan-01 .quan-01-con .man-box-num {
+  /* width:186/75rem;
+      height:62/75rem; */
+  margin-top: 0.13333333rem;
+  line-height: 0.82666667rem;
+  color: #999;
+  font-size: 0.4rem;
+}
+#wrapper .quan-01 .quan-01-con .man-box-num .change-box-left {
+  width: 0.69333333rem;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  border-top-left-radius: 0.06666667rem;
+  border-bottom-left-radius: 0.06666667rem;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 0.4rem;
+  background-color: #fff;
+}
+#wrapper .quan-01 .quan-01-con .man-box-num input {
+  width: 1.06666667rem;
+  height: 0.8rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  background: #f9da9f;
+  font-size: 0.4rem;
+  color: #666;
+}
+#wrapper .quan-01 .quan-01-con .man-box-num .change-box-right {
+  width: 0.69333333rem;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  border-top-right-radius: 0.06666667rem;
+  border-bottom-right-radius: 0.06666667rem;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 0;
+  font-size: 0.4rem;
+  background-color: #fff;
+}
+#wrapper .quan-02 {
+  background-image: url(../images/img/quan_06.png);
+}
+#wrapper .quan-02 input {
+  background-color: #f2b5d8!important;
+}
+#wrapper .resource-bill {
+  width: 100%;
+  border: 2px solid #cad7da;
+  border-radius: 0.26666667rem;
+  padding-bottom: 0.93333333rem;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 单房差 */
+  /* 门票 */
+  /* 意外保险 */
+}
+#wrapper .resource-bill .bill-top {
+  width: 100%;
+  height: 1.25333333rem;
+  background: url(../images/img/bj_03.png) top center no-repeat;
+  background-size: contain;
+  font-size: 0.37333333rem;
+  color: #fff;
+  line-height: 1.22666667rem;
+  text-indent: 0.4rem;
+}
+#wrapper .resource-bill .bill-danfangcha {
+  height: 2.56rem;
+  border-bottom: 0.02666667rem dashed #cad7da;
+  padding: 0.48rem 0.50666667rem 0 0.38666667rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l {
+  float: left;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l h3 {
+  font-size: 0.42666667rem;
+  color: #676c73;
+  margin-bottom: 0.2rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l .man-box-num {
+  line-height: 0.82666667rem;
+  color: #999;
+  font-size: 0.4rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l .man-box-num .change-box-left {
+  width: 0.69333333rem;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  border-top-left-radius: 0.06666667rem;
+  border-bottom-left-radius: 0.06666667rem;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 0.4rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l .man-box-num input {
+  width: 1.06666667rem;
+  height: 0.8rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  background: #e5e5e5;
+  color: #666;
+  font-size: 0.4rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-l .man-box-num .change-box-right {
+  width: 0.69333333rem;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  border-top-right-radius: 0.06666667rem;
+  border-bottom-right-radius: 0.06666667rem;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 0;
+  font-size: 0.4rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-r {
+  float: right;
+  margin-top: 0.26666667rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-r .bill-price {
+  color: #888d94;
+  font-size: 0.42666667rem;
+  position: relative;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-r .bill-price b {
+  font-size: 0.37333333rem;
+  color: #f88412;
+  font-weight: normal;
+  position: absolute;
+  top: 0.02666667rem;
+  left: -0.18666667rem;
+}
+#wrapper .resource-bill .bill-danfangcha .danfangcha-r .bill-price strong {
+  color: #f88412;
+  font-weight: normal;
+  font-size: 0.64rem;
+}
+#wrapper .resource-bill .bill-ticket {
+  height: 4.56rem;
+}
+#wrapper .resource-bill .bill-ticket .bill-ticket-t {
+  width: 100%;
+  height: 1.92rem;
+}
+#wrapper .resource-bill .bill-ticket .bill-ticket-b {
+  width: 100%;
+  height: 1.92rem;
+}
+#wrapper .resource-bill .bill-insurance {
+  padding: 0.57333333rem 0.50666667rem 0 0.4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper .resource-bill .bill-insurance .bill-one h3 {
+  font-size: 0.42666667rem;
+  color: #676c73;
+  margin-bottom: 0.13333333rem;
+}
+#wrapper .resource-bill .bill-insurance .bill-one p {
+  font-size: 0.37333333rem;
+  color: #a9aaad;
+}
+#wrapper .resource-bill .bill-insurance .bill-one p span {
+  width: 0.33333333rem;
+  height: 0.33333333rem;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../images/icon/sprites.png) no-repeat;
+  background-size: 10rem auto;
+  background-position: -5.84rem -5.6rem;
+  margin-right: 0.12rem;
+}
+#wrapper .resource-bill .bill-insurance .bill-two {
+  margin-top: 0.53333333rem;
+  position: relative;
+}
+#wrapper .resource-bill .bill-insurance .bill-two .cur:after {
+  content: "";
+  width: 0.16rem;
+  height: 0.37333333rem;
+  position: absolute;
+  left: 0.10666667rem;
+  top: -0.02666667rem;
+  border-top: 0.08rem solid #1ab2db;
+  border-left: 0.08rem solid #1ab2db;
+  z-index: 3;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+#wrapper .resource-bill .bill-insurance .bill-two i {
+  float: left;
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  border: 1px solid #cad7da;
+  border-radius: 0.05333333rem;
+  /* position: absolute;
+          left: 45/75rem;
+          top: 35/75rem; */
+}
+#wrapper .resource-bill .bill-insurance .bill-two p {
+  padding-left: 0.26666667rem;
+  font-size: 0.42666667rem;
+  float: left;
+}
+#wrapper .resource-bill .bill-insurance .bill-two p:nth-child(1) {
+  position: relative;
+}
+#wrapper .resource-bill .bill-insurance .bill-two p:nth-child(2) {
+  color: #a9aaad;
+  font-size: 0.37333333rem;
+}
+#wrapper .resource-bill .bill-insurance .bill-two span {
+  position: relative;
+  float: right;
+  color: #888d94;
+  font-size: 0.42666667rem;
+  top: -0.53333333rem;
+  right: -1.2rem;
+}
+#wrapper .resource-bill .bill-insurance .bill-two span b {
+  font-weight: normal;
+  font-size: 0.37333333rem;
+  color: #f88412;
+  position: absolute;
+  top: 0.06666667rem;
+  left: -0.16rem;
+}
+#wrapper .resource-bill .bill-insurance .bill-two span strong {
+  font-size: 0.64rem;
+  color: #f88412;
+}
+#wrapper .resource-bill .bill-insurance a {
+  color: #37b4db;
+  font-size: 0.42666667rem;
+  float: right;
+}
+#wrapper .resource-bill .bill-insurance .bill-three span {
+  right: -1.33333333rem;
+}
+#footer {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0;
+  width: 100%;
+  height: 1.30666667rem;
+  line-height: 1.30666667rem;
+  background-color: #fff;
+  position: absolute;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+}
+#footer div {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  color: #999;
+}
+#footer .detail-next {
+  background-color: #f1a30f;
+  color: #fff;
+  font-size: 0.4rem;
+}
+#footer .detail-next span {
+  font-size: 0.50666667rem;
+}
